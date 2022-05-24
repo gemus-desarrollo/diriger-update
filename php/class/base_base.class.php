@@ -106,14 +106,14 @@ class Tbase_core {
             $this->clink= $clink;
 
         $this->array_procesos= null;
-/*
+
         if ($_SESSION['id_usuario'] != -1 && (empty($_SESSION['ip_app']) || empty($_SESSION['mac']))) {
             if (is_null($_SESSION['output_signal'])
                 || (!is_null($_SESSION['output_signal']) && ($_SESSION['output_signal'] != 'shell' && $_SESSION['output_signal'] != 'webservice'))) {
         ?>
             parent.location.href= '<?=_ROOT_DIRIGER_DIR."index.php"?>';
         <?php } }
-*/
+
         $this->cronos= date('Y-m-d H:i:s');
         $this->location= $_SESSION['location'];
         $this->user_date_ref= date('Y-m-d');
