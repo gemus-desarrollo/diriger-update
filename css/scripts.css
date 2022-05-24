@@ -1,0 +1,30 @@
+@import url(main.css);
+@import url(main2cols.css);
+
+#scripttitle{
+font-size: 110%;
+font-weight: bold;
+text-align: center;
+}
+
+.footad a{
+text-decoration: none;
+font: normal 11px Verdana;
+}
+
+pre, .codehighlight{
+background-color: #E9E9E9;
+padding: 5px;
+width: 95%;
+border: 1px dashed gray;
+}
+
+.codehighlight{
+font-family: Arial;
+font-size: 13px;
+}
+
+code{
+background-color: #EFEFEF;
+font-size: 13px;
+}

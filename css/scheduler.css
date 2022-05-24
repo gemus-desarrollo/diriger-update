@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* CSS Document */	
+	
+.div-ajax {
+    overflow: auto; 
+    margin: 0px;
+}
+
+#scheduler-bar {
+    height: 24px;
+    width: 100%;
+    position: fixed;
+    top: 71px;
+    left: 0px;
+    z-index: 99;
+    background-color: #232323;
+    color:  white;
+    border-bottom: 3px solid #828282; 
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#paging-bar {
+    height: 24px;
+    width: 100%;
+    position: fixed;
+    top: 106px;
+    left: 0px;
+    z-index: 99;
+    background-color: #232323;
+    color:  white;
+    font:  bold;
+    font-size:  1.3em;
+    border-bottom: 3px solid #828282;
+    margin-bottom: 10px;
+    padding:  0px 20px 0px 20px;
+}
+
+#paging-bar td {
+    cursor:  pointer;
+    padding:  3px;
+    min-width:  20px;
+    vertical-align:  top;
+    text-align:  center;
+}
+
+#paging-bar td:hover {
+    text-decoration:  underline;
+    background-color:  #FFB591;
+    color:  #723838;
+}
+
+.paging-tab-selected {
+    text-decoration:  underline;
+    background-color:  #FFB591;
+    color:  #723838;
+    border-bottom: 3px solid #828282;
+    margin-bottom: 10px;
+    width:  20px;
+}
+
+#scheduler-bar .calendar-legend {
+    color:  #2D8EB6;
+    padding-right: 3px;
+}
+
+#scheduler-bar .calendar-data {
+    color:  #FF;
+    padding-right: 2px;
+    font-size: 0.8em;
+}
+
+#scheduler-container {
+    margin:  0px;
+    flex-flow:  row; 
+    overflow: visible;
+}
+
+#scheduler-container td {
+    vertical-align: top;
+    text-align: left;
+}
+
+#scheduler {
+    width: 100%; 
+    margin-left: 2px; 
+}
+
+#scheduler td {
+    vertical-align: top;
+    text-align: left;
+}
+#scheduler td.plinner div.inside_responsable {
+    color: #999990;
+    font-style: oblique;
+}
+#scheduler a.tdday {
+    color: #000000;
+}
+#scheduler a.tdday:hover {
+    color: #FF0000;
+    font-weight: bold;
+}
+#scheduler .head {
+    background: #e2e3e6;
+    color: #333333;
+    border: 1px dotted #808080;
+    padding: 4px; 
+    text-align: center;
+}
+
+#scheduler .inner {
+    height: 70px;
+    padding: 4px;
+    border: 1px dotted #808080;
+    border-left: none;
+    background: white;
+}
+
+#scheduler .today {
+    background: #e2edff;
+}
+
+#scheduler .left {
+    background: #ececec;
+    border-left: none;
+    border-top: none;
+}
+
+#scheduler .left-prn {
+    background:  white;
+    border-left: none;
+    border-top: none;
+}
+
+#scheduler .first {
+    border: 1px dotted #808080;
+}
+
+#scheduler .right {
+    background: #ececec;
+    border-right: none;
+    border-bottom: none;
+}
+
+#scheduler .right-prn {
+    background: white;
+    border-right: none;
+    border-bottom: none;
+}
+
+#scheduler .sunday {
+    color: #999999;
+    background: #ECF5FF;
+    border: 1px dotted #808080;
+    font-weight: lighter;
+}
+
+#scheduler .usr {
+    font-size:  10px;
+    font-weight:  normal;
+    float: right; 
+    margin-top: 20px;	
+}
+
+#scheduler .name {
+    margin: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;	
+}
+
+#scheduler .apr {
+    font-size:  10px;
+    font-weight:  normal;
+    margin: 20px; 
+    margin-top: 10px;	
+}	
+
+
+/* PARA EL PLAN GENERAL DE LA EMPRESA  */
+
+#scheduler .plhead{
+    background: #CCCCCC;
+    color: #333333;
+    padding: 5px;
+    border-bottom: 2px inset #333333;
+    border-right: 2px groove white;		
+}
+#scheduler td.plhead.inner, #scheduler th.plhead.inner {
+    padding: 3px!important;
+    height: 0px;
+    min-height: 0px;
+}
+
+#scheduler .colspan {
+    background: #e2e3e6;
+    color: #333333;
+    padding: 4px;
+    text-align: center;
+    border: none;
+    border: 1px dotted #808080;
+}
+
+#scheduler .colspan_dia {
+    background: #ececec;
+    color: #333333;
+    padding: 4px;
+    text-align: left;
+    font-style: inherit;
+    padding: 4px;
+    border: none;
+    border: 1px dotted #808080;
+}
+
+#scheduler .plinner {
+    text-align: left;
+    vertical-align: top;
+    background: white;
+    border: 1px dotted #808080;
+    padding: 3px;
+    padding-left: 5px;
+}
+
+
+/* PARA LAS SENALES ***************************************************************/
+#scheduler img {
+    width: 12px;
+    height: 12px;
+}
+
+.alarm-box {
+    -moz-border-radius-topleft:  3px;
+    -moz-border-radius-topright:  3px; 
+    -moz-border-radius-bottomleft:  3px;
+    -moz-border-radius-bottomright:  3px;
+
+    width: auto;
+    margin:  2px;
+    padding:  1px;
+    padding-left: 2px;
+    clear:  both;
+    overflow: hidden;
+    color:  black;
+    background: #EAF4FF;
+    border: 1px solid #8B8B8B;	
+
+    cursor: pointer;
+    text-decoration: none;
+} 
+
+.blank	{
+    background: #A4E1FF;
+    border: 1px solid #88742e;
+}
+.red	{
+    background: #FF5B6B;
+    border: 1px solid #88742e;
+    text-decoration: blink;
+}
+.orange	{
+    background: #FF641A;
+    border: 1px solid #FE423D;
+}
+.yellow	{
+    background:  #ffe763;
+    border: 1px solid #88742e;
+}
+.green	{
+    background: #00F200;
+    border: 1px solid #88742e;
+}
+.dark	{
+    background: #E10000;
+    border: 1px solid #88742e;
+    color: #FF0;
+}
+.gray	{
+    background: #C4C4C4;
+    border: 1px solid #484848;
+    color: #484848;
+}
+
+#scheduler .task {
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.50);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.50);
+    outline-style: none;
+    outline-width: 0;	
+}

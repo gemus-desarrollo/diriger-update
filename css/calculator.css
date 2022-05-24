@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+#result {
+    text-align:right;
+    margin:6px 5px 5px 5px;
+    padding:5px;
+    min-height:25px;
+    overflow:auto;
+    border-radius:8px;
+}
+#dimmingdivGrey {
+   display: none;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0px;
+    height: fit-content; 
+}
+.label.label-info {
+    text-align: left;
+    padding: 3px 10px;
+    font-size: 1.3em;
+}
+.btn-toolbar .btn {
+    padding:3px;
+    margin: 2px;
+    vertical-align:middle;
+    text-align:center;
+    text-shadow:#444 0px -1px 0px;
+    
+    color:#FFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    min-width: 80px;
+}
+.btn-toolbar.function-key .btn.btn-default {
+    border:outset 1px #464646;
+    background-color: rgba(0,140,105,0.8);
+}
+.btn-toolbar.number-key .btn.btn-default {
+    border:outset 1px #464646;
+    background-color: rgba(0,133,225,0.8);
+}
+.btn-toolbar.panel-key .btn.btn-default {
+    border:outset 1px #464646;
+    background-color: rgba(178,76,102,0.8);
+}
+.btn-toolbar .btn.btn-default:hover {
+    background:#5D5D5D;
+    border:inset 1px #5D5D5D;
+    border-radius:4px;
+    cursor:pointer;
+}
+

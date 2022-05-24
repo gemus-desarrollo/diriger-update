@@ -1,0 +1,65 @@
+/* 
+    Created on : sep 16, 2018, 12:24:51 p.m.
+    Author     : mustelier
+*/
+
+body {
+    background: white;
+}
+
+.body-form {
+    max-height: 400px;
+    overflow: auto;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    margin: 0px 2px 2px 4px;
+}
+
+a {
+    text-underline: none;
+    text-decoration: none;
+    text-underline-style: none;
+    background: node;
+    border: none;
+}
+
+.app-body {
+    padding-bottom: 30px;
+}
+
+.label-year {
+    margin: 3px 8px 3px 8px;
+}
+
+.colspan {
+    background: #c6c7c9 !important;
+    color: black!important;
+    padding: 4px;
+    text-align: center;
+    border: none;
+    border: 1px dotted #808080;
+    font-weight: bolder;
+    text-align: left;
+}
+
+td {
+    vertical-align: top!important;
+}
+
+th {
+    vertical-align: middle!important;
+    text-align: left;
+    padding-left: 4px!important;
+}

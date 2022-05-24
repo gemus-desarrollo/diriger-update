@@ -1,0 +1,235 @@
+/**
+* card de informacion general
+*/
+
+.card {
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px #999;
+}
+
+.info-panel, 
+.card.info-panel, 
+.card-body.info-panel {
+    height: auto;
+    overflow-y: auto;
+}
+/* car-dark **************************************/
+
+.card-dark {
+    border-color: #222d32;
+}
+
+.card-dark>.card-header {
+    color: #fff;
+    background-color: #333A40;
+    border-color: #333A40;
+}
+
+.card-dark>.card-header+.card-collapse>.card-body {
+    border-top-color: #222d32;
+}
+
+.card-dark>.card-header .badge {
+    color: #333A40;
+    background-color: #fff;
+}
+
+.card-dark>.card-footer+.card-collapse>.card-body {
+    border-bottom-color: #333A40;
+}
+
+
+/* car-primary ****************************************/
+
+.card-primary {
+    border-color: #0084FF;
+}
+
+.card-primary>.card-header {
+    color: #fff;
+    background-color: #0084FF;
+    border-color: #0084FF;
+}
+
+.card-primary>.card-header+.card-collapse>.card-body {
+    border-top-color: #0084FF;
+}
+
+.card-primary>.card-header .badge {
+    color: #0084FF;
+    background-color: #fff;
+}
+
+.card-primary>.card-footer+.card-collapse>.card-body {
+    border-bottom-color: #0084FF;
+}
+
+
+/* car-success ****************************************/
+
+.card-success {
+    border-color: #00A441;
+}
+
+.card-success>.card-header {
+    color: #fff;
+    background-color: #00A441;
+    border-color: #00A441;
+}
+
+.card-success>.card-header+.card-collapse>.card-body {
+    border-top-color: #00A441;
+}
+
+.card-success>.card-header .badge {
+    color: #00A441;
+    background-color: #fff;
+}
+
+.card-success>.card-footer+.card-collapse>.card-body {
+    border-bottom-color: #00A441;
+}
+
+
+/* car-warning ***************************************/
+
+.card-warning {
+    border-color: #FFBE00;
+}
+
+.card-warning>.card-header {
+    color: #fff;
+    background-color: #FFBE00;
+    border-color: #FFBE00;
+}
+
+.card-warning>.card-header+.card-collapse>.card-body {
+    border-top-color: #FFBE00;
+}
+
+.card-warning>.card-header .badge {
+    color: #FFBE00;
+    background-color: #fff;
+}
+
+.card-warning>.card-footer+.card-collapse>.card-body {
+    border-bottom-color: #FFBE00;
+}
+
+
+/* car-danger ****************************************/
+
+.card-danger {
+    border-color: #E63A40;
+}
+
+.card-danger>.card-header {
+    color: #fff;
+    background-color: #E63A40;
+    border-color: #E63A40;
+}
+
+.card-danger>.card-header+.card-collapse>.card-body {
+    border-top-color: #E63A40;
+}
+
+.card-danger>.card-header .badge {
+    color: #E63A40;
+    background-color: #fff;
+}
+
+.card-danger>.card-footer+.card-collapse>.card-body {
+    border-bottom-color: #E63A40;
+}
+
+
+/*  finish *******************************************/
+
+.card .card-header {
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
+}
+
+.card.card-info {
+    color: #7f442e;
+    border: 1px groove #c4c4c4;
+    box-shadow: 3px 3px 18px rgba(55, 156, 234, 0.4);
+    border-radius: 6px;
+    width: 60%;
+    min-width: 200px;
+    opacity: 0.9;
+    -moz-opacity: 0.9;
+    filter: alpha(opacity=90);
+    -khtml-opacity: 0.9;
+}
+
+.card.card-info .card-body {
+    padding: 0px 0px 2px 0px;
+    padding-bottom: 3px;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.card-info .card-body list-group {
+    height: 100%;
+}
+
+.card-info .card-body list-group p {
+    font-size: 0.95em!important;
+    line-height: 1;
+}
+
+.card-info .card-body .list-group legend {
+    font-weight: bold;
+    font-size: 1.2em!important;
+    line-height: 1.4;
+    padding: 3px;
+    color: #fff;
+    background: #ccc;
+}
+
+.card-info .list-group a {
+    border: none;
+}
+
+.card.card-info .card-footer {
+    background: #fff;
+    border: none;
+}
+
+.card-info .close {
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
+}
+
+.card .card-header .close {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
+}
+
+
+/***************************************************************************************
+*                                                                                      *
+*-  CONFIGURACION DE LOS TAB                                                           *
+*                                                                                      *
+***************************************************************************************/
+
+ul.nav.nav-tabs {
+    margin-bottom: 10px;
+}
+
+.tabcontent {
+    border: none;
+}

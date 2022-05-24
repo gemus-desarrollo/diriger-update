@@ -1,0 +1,126 @@
+.panel-multiselect {
+    margin: 0px 4px 10px 0px;
+    width: 100%;
+    min-height: 400px;
+    max-height: 450px;
+    font-size: 1em!important;
+    box-sizing: border-box;
+    padding: 4px;
+    background: -moz-linear-gradient(left, #e0d4d4, #ffffff);
+    border: #e0d4d4 1px groove;
+    box-shadow: 2px 2px 4px rgba(224, 215, 211, 0.8);
+    overflow-y: auto;
+}
+
+.panel-multiselect.left {
+    border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+}
+
+.panel-multiselect.right {
+    border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+}
+
+.panel-multiselect>div.item {
+    background: #ffffff;
+    color: #000;
+    padding: 4px 4px;
+    border: #914613 1px groove;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin: 3px 0px 2px;
+    cursor: pointer;
+}
+
+.panel-multiselect>div.item label {
+    font-weight: normal;
+    margin-left: 8px;
+}
+
+.panel-multiselect .fa,
+.panel-multiselect>div.item .fa,
+.panel-multiselect>div.title .fa {
+    margin-right: 8px;
+}
+
+.panel-multiselect>div.item img,
+.panel-multiselect>div.title img {
+    margin-right: 5px;
+}
+
+.panel-multiselect>div.title {
+    box-shadow: 2px 2px 4px rgba(172, 55, 28, 0.3);
+    border-radius: 6px;
+    color: rgb(41, 32, 32);
+    font-weight: bold;
+    padding: 4px 4px;
+    margin: 3px 6px 2px 0px;
+    cursor: default;
+}
+
+.panel-multiselect div.osde {
+    background-color: #d98880;
+    border: #7b241c 1px groove;
+}
+
+.panel-multiselect div.grupo {
+    background-color: #c39bd3;
+    border: #5b2c6f 1px groove;
+}
+
+.panel-multiselect div.empresa {
+    background-color: #f0b27a;
+    border: #a04000 1px groove;
+}
+
+.panel-multiselect div.ueb {
+    background-color: #a3e4d7;
+    border: #0e6655 1px groove;
+}
+
+.panel-multiselect div.direccion {
+    background-color: #a9cce3;
+    border: #21618c 1px groove;
+}
+
+.panel-multiselect div.dpto {
+    background-color: #f7dc6f;
+    border: #d4ac0d 1px groove;
+}
+
+.panel-multiselect div.arc {
+    background-color: #aeb6bf;
+    border: #273746 1px groove;
+}
+
+.panel-multiselect>div.item:hover {
+    background: #71d4e1;
+    color: #ffffff;
+    box-shadow: 3px 3px 6px rgba(200, 50, 96, 0.3);
+    margin: 4px 0px 4px;
+}
+
+.panel-multiselect>div.item.active {
+    background: #337ab7;
+    border-radius: 4px;
+    border: 1px groove #cccc;
+    box-shadow: 2px 2px 4px rgba(43, 141, 221, 0.6);
+    margin: 1px 4px 4px 2px;
+    color: #ffffff;
+    cursor: default;
+}
+
+.panel-multiselect>div.item:focus {
+    background: rgba(201, 221, 200, 0.6);
+    color: #333333;
+}
+
+.panel-multiselect>div.item.hidden {
+    display: none;
+}
+
+.panel-multiselect>div.item>select {
+    margin-top: 6px;
+    width: 80%;
+}

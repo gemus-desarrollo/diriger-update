@@ -1,0 +1,323 @@
+.app-nav,
+.app-nav nav,
+.sidebar,
+.topbar.navbar {
+    font-size: 14px;
+    color: white;
+    background: #3B5998;
+    min-height: 52px;
+    margin: 0;
+}
+
+.topbar .navbar-brand,
+.app-nav .navbar-brand {
+    font-size: 1rem!important;
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border: 0 solid transition!important;
+    border: 0 solid rgba(0, 0, 0, .15);
+    border-radius: 0;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.app-nav button:hover {
+    background: #FFA700;
+    box-shadow: 3px 3px 3px rgba(255, 167, 0, 0.2)!important;
+}
+
+.topbar .dropdown-divider,
+.sidebar .dropdown-divider {
+    margin: 0rem;
+}
+
+
+/********************************************************************************
+static bar : tercera fila
+*********************************************************************************/
+
+.app-nav .navd-static {
+    color: white;
+    background: #3B5998;
+    height: 35px;
+    width: 100%;
+}
+
+.app-nav .navd-static li,
+.app-nav .navd-static li a {
+    font-size: 14px;
+    color: white;
+    background: #3B5998;
+    border: none;
+}
+
+
+/*****************************************************************************
+    topbar --> menu horizontal
+******************************************************************************/
+
+.topbar a,
+.topbar .navbar-default .navbar-nav>li>a,
+.topbar ul li a,
+.topbar .navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+    text-transform: capitalize;
+    padding: 16px 15px;
+    font-family: 'Roboto', sans-serif;
+    display: block !important;
+}
+
+.topbar .active a,
+.topbar .active a:focus,
+.topbar .active a:hover,
+.topbar li a:hover,
+.topbar li a:focus,
+.topbar .navbar-default .navbar-nav>.show>a,
+.topbar .navbar-default .navbar-nav>.show>a:focus,
+.topbar .navbar-default .navbar-nav>.show>a:hover {
+    color: #fff;
+    background: #4CAF50;
+    outline: 0;
+}
+
+
+/*==========Sub Menu=v==========*/
+
+.topbar ul>li:hover>a {
+    background: #4CAF50;
+}
+
+.topbar ul ul>li:hover>a,
+.topbar.navbar-default .navbar-nav .show .dropdown-menu>li>a:focus,
+.topbar.navbar-default .navbar-nav .show .dropdown-menu>li>a:hover {
+    background: #4CAF50;
+}
+
+.topbar ul ul ul>li:hover>a {
+    background: #4CAF50;
+}
+
+.topbar ul ul,
+.topbar ul ul.dropdown-menu {
+    background: #1565C0;
+}
+
+.topbar ul ul ul,
+.topbar ul ul ul.dropdown-menu {
+    background: #1E88E5;
+}
+
+.topbar ul ul ul ul,
+.topbar ul ul ul ul.dropdown-menu {
+    background: #64B5F6;
+}
+
+.topbar ul.dropdown-menu li a,
+.topbar ul.dropdown-menu li {
+    font-size: 0.9rem;
+    padding: 8px 8px;
+}
+
+
+/******************************Drop-down menu work on hover**********************************/
+
+.topbar {
+    background: none;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    min-height: 30px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+    .topbar ul li:hover>ul {
+        display: block
+    }
+    .topbar ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 250px;
+        display: none
+    }
+    /*******/
+    .topbar ul ul li {
+        position: relative
+    }
+    .topbar ul ul li:hover>ul {
+        display: block
+    }
+    .topbar ul ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 250px;
+        display: none
+    }
+    /*******/
+    .topbar ul ul ul li {
+        position: relative
+    }
+    .topbar ul ul ul li:hover ul {
+        display: block
+    }
+    .topbar ul ul ul ul {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        min-width: 250px;
+        display: none;
+        z-index: 1
+    }
+}
+
+
+/*
+@media only screen and (max-width: 767px) {
+    .navbar-nav .show .dropdown-menu .dropdown-menu>li>a {
+        padding: 16px 15px 16px 35px
+    }
+    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu>li>a {
+        padding: 16px 15px 16px 45px
+    }
+}
+*/
+
+
+/*****************************************************************************
+    sidebar ---> menu vertical
+******************************************************************************/
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #3B5998;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar .dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.sidebar .dismiss:hover {
+    background: transparent;
+    color: #4CAF50;
+}
+
+.sidebar .overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar .overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+.sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+.sidebar ul li.active>a,
+.sidebar a[aria-expanded="true"] {
+    color: white;
+    background: #4CAF50;
+}
+
+.sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.sidebar ul ul a {
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+.sidebar a.sidebar-header {
+    padding: 20px;
+    color: white;
+    background: #3B5998;
+}
+
+.sidebar ul ul ul>li:hover>a {
+    background: #4CAF50;
+}
+
+.sidebar ul ul,
+.sidebar ul ul.dropdown-menu {
+    background: #1565C0;
+}
+
+.sidebar ul ul ul {
+    background: #1E88E5
+}
+
+.sidebar ul ul ul ul {
+    background: #64B5F6
+}
+
+.sidebar ul ul a:hover {
+    padding-left: 30px !important;
+    color: white;
+    background: #4CAF50;
+}
+
+.sidebar a:hover,
+.sidebar ul li a:hover,
+.sidebar ul li ul li a:hover {
+    color: white;
+    background: #4CAF50;
+}

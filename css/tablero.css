@@ -1,0 +1,266 @@
+/*
+ * Component: Info Box
+ * -------------------
+ */
+
+.info-box {
+    display: block;
+    min-height: 90px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.info-box small {
+    font-size: 14px;
+}
+
+.info-box .progress {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5px -10px 5px -10px;
+    height: 2px;
+}
+
+.info-box .progress,
+.info-box .progress .progress-bar {
+    border-radius: 0;
+}
+
+.info-box .progress .progress-bar {
+    background: #fff;
+}
+
+.info-box-icon {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 90px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.info-box-icon>img {
+    max-width: 100%;
+}
+
+.info-box-content {
+    padding: 5px 10px;
+    margin-left: 90px;
+}
+
+.info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.progress-description,
+.info-box-text {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-box-text {
+    text-transform: uppercase;
+}
+
+.info-box-more {
+    display: block;
+}
+
+.progress-description {
+    margin: 0;
+}
+
+.info-box-icon label {
+    text-orientation: upright;
+}
+
+
+/**
+**  Panel de alarmas
+*/
+
+.rotate-90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+/* CSS Document */
+
+.perspectiva {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    margin: 6px 6px 0px 3px;
+    padding: 6px;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+}
+
+.indicador-content {
+    background: transparent;
+    float: left;
+    display: inline-block;
+    max-width: 500px;
+    height: 250px;
+}
+
+.indicador {
+    background: white;
+    min-height: 100px;
+    max-width: 500px;
+    margin: 5px;
+    width: fit-content;
+}
+
+.indicador:hover {
+    box-shadow: 0 -4px 8px rgba(145, 146, 146, 0.60);
+}
+
+div.indicador hr {
+    line-height: 8px;
+    margin: 3px;
+}
+
+div.indicador label {
+    font-size: 1.1em;
+}
+
+.panel.indicador.panel-body {
+    background: #fff;
+}
+
+.ind-titulo {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+    font-stretch: condensed;
+    background-color: #C0C0C0;
+    color: #000000;
+    padding: 0px;
+    padding-left: 2px;
+    padding-right: 5px;
+    margin: 0px;
+    width: 100%;
+}
+
+.value {}
+
+.signal {
+    float: right;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+table.signal,
+td.signal {
+    float: none;
+    background: white;
+    padding: 2px 4px;
+    vertical-align: middle;
+}
+
+.criterio {
+    text-align: left;
+    text-shadow: none;
+    padding: 0px;
+    padding-left: 2px;
+    color: #008000;
+}
+
+.enfecha {
+    color: #000000;
+    background: #FFFFFF;
+}
+
+.fuera_fecha {
+    background: #BF0000;
+    color: #FFFFFF;
+    margin: 1px;
+    padding: 1px;
+    padding-right: 2px;
+    text-decoration: blink;
+    text-shadow: #FFFF00;
+}
+
+.update_fecha {
+    background: #FFFF00;
+    color: #FF0000;
+    margin: 1px;
+    padding: 1px;
+    padding-right: 2px;
+    text-decoration: blink;
+    text-shadow: #0000FF;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+/*---------------------------------------------------------------------------
+<!-- TABLERO DE RIESGOS -*/
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+.riskcell {
+    float: left;
+    clear: right;
+    max-width: 350px;
+    border: 1px groove #3373bf;
+    border-radius: 8px 8px 0 0;
+    padding: 0px;
+    margin: 10px;
+    cursor: pointer;
+    box-sizing: content-box;
+    box-shadow: 8px 8px 8px rgb(222, 222, 223)
+}
+
+.riskcell:hover {
+    border: 1px groove #e0370a;
+    box-shadow: none;
+}
+
+.riskcell .panel-heading {
+    background: #3373bf;
+    color: #fff;
+}
+
+.riskcell .panel-heading .panel-title {
+    font-size: 1em;
+}
+
+.riskcell .panel-body {
+    cursor: pointer;
+}
+
+.riskcell .panel-body .label {
+    padding: 2px 4px 4px 4px;
+    color: #000088;
+    font-weight: normal!important;
+    font-size: 1.1em;
+    background: #b3e9f7;
+}

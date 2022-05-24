@@ -1,0 +1,100 @@
+/***************************************************************************************
+*                                                                                      *
+*-  TARGETAS DE LOS TABLEROS                                                          *
+*                                                                                      *
+***************************************************************************************/
+
+.win-board {
+    border-radius: 2%;
+    filter: alpha(opacity=95);
+    -moz-opacity: 0.95;
+    opacity: 0.95;
+    background: #fff;
+    border: 1px #ccccc solid;
+    -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.40);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.40);
+    position: absolute;
+    display: none;
+    min-width: 40%;
+    max-width: 80%;
+}
+
+#win-board-resum {
+    border-color: rgba(156, 51, 52, 0.3);
+    background: #EEFFDD;
+}
+
+#win-board-signal {
+    background: #ffff;
+    border-color: rgba(156, 51, 52, 0.3);
+    width: 70%;
+}
+
+#win-board-signal-project {
+    background-color: #f0fcff;
+    border: 2px solid;
+    border-color: rgba(60, 103, 164, 0.3);
+    width: 70%;
+}
+
+.win-board .card-header {
+    margin: 0px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.win-board .card-body {
+    padding: 7px;
+}
+
+.win-board .card-body .btn.btn-app {
+    color: white;
+}
+
+.win-board .card-body .list-group .list-group-item {
+    padding: 0px 8px;
+    border: none;
+}
+
+.win-board .card-body .btn-toolbar {
+    margin: 4px 4px 10px 5px;
+    padding: 0px;
+}
+
+.win-board .btn.btn-link {
+    margin-left: -8px 4px 4px 0px;
+}
+
+.win-board li a {
+    margin-left: 4px!important;
+    background-color: transparent !important;
+}
+
+.win-board .card-body .btn-toolbar .caption {
+    line-height: 1;
+    font-size: 0.8em;
+}
+
+.win-board .card-body .btn-toolbar img {
+    margin-top: 4px;
+}
+
+.win-board .ajax-title {
+    margin-left: 6px;
+}
+
+.win-board .win-body div.label-primary,
+.win-board .win-body label.label-primary {
+    padding: 4px;
+    letter-spacing: 2px;
+    margin: 4px 0px 4px 0px;
+}
+
+.win-board .win-body div.list-group {
+    margin-top: 8px;
+}
+
+.win-board .win-body .list-group .list-goup-item {
+    margin: 5px 0px;
+    border: none;
+    background: red;
+}

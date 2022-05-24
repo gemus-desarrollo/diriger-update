@@ -1,0 +1,10 @@
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+# evitar muestra de fichero
+IndexIgnore *.php *.html *.css *.js
+
+# evitar listado de directorios
+IndexIgnore *

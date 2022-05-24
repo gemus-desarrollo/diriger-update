@@ -1,0 +1,651 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body a {
+    cursor: pointer;
+}
+
+@media screen {
+    body {
+        padding: 0;
+        margin: 0;
+        margin-top: 0px!important;
+        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+}
+
+.div-ajax {
+    visibility: hidden;
+    overflow: hidden;
+}
+
+div.app-body {
+    border: none;
+    overflow-y: scroll;
+}
+
+.container.clear,
+.container-fluid.clear,
+.row.clear,
+div.clear,
+.list-inline.clear,
+.thumbnail.clear,
+.btn.clear {
+    padding: 0px;
+    margin: 0px;
+    /*   border: 1px solid red; */
+}
+
+.app-body.container,
+.app-body.container-fluid,
+.app-body.container.table,
+.app-body.container-fluid.table {
+    top: 0px;
+    margin-top: 0px;
+    padding: 0px 0px 20px 0px;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+body.form,
+.app-body.form {
+    padding: 10px 0px 0px 0px;
+    background: rgb(68, 85, 102) none repeat scroll 0% 0%;
+    overflow: visible;
+    height: 100vh;
+}
+
+.app-body.form {
+    overflow: auto;
+}
+
+.app-body.table {
+    padding: 10px 0px 0px 0px;
+    background: #fff;
+    height: 100vh;
+}
+
+.app-body.container-fluid.table,
+.app-body.container.table {
+    background-color: #fff!important;
+    font-weight: normal!important;
+}
+
+.app-body.container-fluid.onebar,
+.app-body.container.onebar {
+    margin-top: 0px!important;
+}
+
+.app-body.container-fluid.twobar,
+.app-body.container.twobar {
+    margin-top: 0px!important;
+}
+
+
+/* lobjetivos */
+
+.app-body.container-fluid.threebar,
+.app-body.container.threebar,
+.app-body.content.threebar {
+    margin-top: 0px!important;
+}
+
+.app-body.container-fluid.fourbar,
+.app-body.container.fourbar {
+    margin-top: 0px!important;
+}
+
+.app-body.container-fluid.fivebar,
+.app-body.container.fivebar {
+    margin-top: 0px!important;
+}
+
+.app-body.container-fluid.sixthbar,
+.app-body.container.sixthbar {
+    margin-top: 0px!important;
+}
+
+.app-body.container-fluid.sevenbar,
+.app-body.container.sevenbar {
+    margin-top: 0px!important;
+}
+
+.app-body.container-fluid.eightbar,
+.app-body.container.eightbar {
+    margin-top: 0px!important;
+}
+
+iframe.app-body.container.sevenbar {
+    margin-top: 82px!important;
+}
+
+.container-fluid .table .img-thumbnail,
+.container .table .img-thumbnail {
+    cursor: default;
+    margin: 2px 2px 4px 2px;
+}
+
+.container-fluid .table a,
+.container .table a {
+    cursor: pointer;
+    margin: 2px 2px 4px 2px;
+}
+
+.container-fluid.border {
+    border-radius: 4px;
+    border: 1px solid rgba(170, 200, 234, 0.6);
+}
+
+.panel-body>form,
+.panel-body.form {
+    background: transparent radial-gradient(ellipse at center center, rgb(229, 229, 229) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% !important;
+    font-weight: normal;
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+}
+
+.center table {
+    align-content: center;
+    align-content: center;
+}
+
+table.center {
+    align-self: center;
+}
+
+hr.divider {
+    margin: 10px 8px;
+    border: thin grove rgba(234, 234, 238, 0.9);
+    clear: both!important;
+    width: 100%;
+}
+
+li.divider,
+div.divider {
+    height: 2px !important;
+    margin: 10px 4px;
+    border: thin grove rgba(234, 234, 238, 0.9);
+    clear: both!important;
+    flex: 1;
+}
+
+.control-label {
+    font-weight: normal;
+    /* text-align: left!important; */
+}
+
+.control-label.pull-left {
+    text-align: left;
+}
+
+.btn {
+    border-radius: 4px
+}
+
+a.btn-success,
+a.btn-primary,
+a.btn-warning,
+a.btn-danger {
+    color: #fff
+}
+
+.btn-success {
+    background: #26B99A;
+    border: 1px solid #169F85
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+    background: #169F85
+}
+
+.btn-dark {
+    color: #E9EDEF;
+    background-color: #4B5F71;
+    border-color: #364B5F
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active,
+.btn-dark.active,
+.open .dropdown-toggle.btn-dark {
+    color: #FFFFFF;
+    background-color: #394D5F;
+    border-color: #394D5F
+}
+
+.btn-round {
+    border-radius: 30px
+}
+
+.btn.btn-app {
+    position: relative;
+    padding: 5px;
+    margin: 0 0 10px 5px;
+    min-width: 80px;
+    min-height: 40px;
+    text-align: center;
+    font-size: 12px
+}
+
+.btn.btn-grey {
+    color: #666;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+
+/*
+.btn.btn-app>.fa,
+.btn.btn-app>.fa,
+.btn.btn-app>.ion {
+    font-size: 20px;
+    display: block
+}
+.btn.btn-app:hover {
+    background: #f4f4f4;
+    color: #444;
+    border-color: #aaa
+}
+*/
+
+.btn.btn-app:active,
+.btn.btn-app:focus {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-block.btn-app {
+    margin: 4px 2px;
+    align-content: center!important;
+    text-align: center!important;
+}
+
+textarea {
+    padding: 10px;
+    vertical-align: top;
+    width: 200px
+}
+
+textarea:focus {
+    outline-style: solid;
+    outline-width: 2px
+}
+
+
+/**
+*  fielset 
+*/
+
+form label.label,
+form div.label {
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+.form-control {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+form div.fieldset,
+form fieldset.fieldset {
+    border: 1px groove rgba(224, 224, 224, 0.8);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 14px;
+    margin: 10px 10px 0px 10px;
+}
+
+legend {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form div.fieldset legend,
+form fieldset.fieldset legend {
+    margin: 0px 13px 0px 13px;
+    padding: 0px 13px 0px 13px;
+    border: none;
+    width: inherit;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.date input {
+    background-color: #fff!important;
+}
+
+.form-control.color {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: transparent!important;
+    cursor: pointer;
+}
+
+.container-fluid.form,
+.container.form {
+    margin-top: 10px!important;
+}
+
+.ico {
+    width: 16px;
+    width: 16px;
+    margin: 4px 8px 2px 2px!important;
+}
+
+label.radio.text,
+label.checkbox.text,
+label.text {
+    font-weight: normal;
+    text-align: left!important;
+    padding: 2px 2px 2px 2px;
+    color: #000;
+}
+
+.alert.text,
+.label.text {
+    margin: 4px;
+}
+
+.alert.text {
+    padding: 8px 4px 8px 4px;
+}
+
+
+/**
+*    Modificacion de lastablas de bootstrap
+**/
+
+body.table {
+    padding: 0px;
+    margin: 0px;
+    background: #fff;
+}
+
+table.table tbody tr {
+    background: #fff;
+}
+
+table.table thead tr,
+table.table thead th {
+    background: #ab4e13;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.0em;
+}
+
+table.table tbody tr,
+table.table tbody td {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.table td label {
+    font-size: 1.2em!important;
+}
+
+
+/**
+*
+*/
+
+i.fa {
+    margin-right: 4px;
+}
+
+table i.fa {
+    color: #cc0000;
+    text-align: left;
+    margin-right: 10px;
+}
+
+td button.btn i.fa,
+td a.btn i.fa {
+    color: #fff;
+}
+
+.spinner i.fa {
+    font-size: 0.56em;
+}
+
+.panel-body .panel-heading i.fa,
+.close i.fa {
+    color: #fff;
+}
+
+
+/*
+*   Selector de dias desde el menu
+*/
+
+.daypicker {
+    background: #fff;
+    color: #000;
+    width: 220px;
+    max-height: 225px;
+    padding: 4px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    direction: ltr;
+    align-content: center;
+}
+
+.daypicker.panel {
+    width: 220px;
+    height: 195px;
+    background: none;
+    background-color: #fff;
+    border: 1px solid #ccc88c;
+    box-shadow: 3px 3px 15px rgb(51, 195, 242, 0.3);
+}
+
+.daypicker.panel td.active:hover {
+    cursor: pointer;
+}
+
+.daypicker.panel th:hover,
+.daypicker.panel td.unactive:hover {
+    background: none;
+    border: none;
+    cursor: default;
+}
+
+.daypicker table {
+    width: 100%;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.daypicker.panel table {
+    background-color: #fff;
+}
+
+.daypicker td,
+.daypicker th {
+    text-align: center;
+    padding: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+
+.daypicker table tr td.new {
+    background: none;
+    color: #999;
+    cursor: default;
+}
+
+.daypicker table tr td.free {
+    color: #cc0000;
+}
+
+.daypicker table tr td.free:hover {
+    background: none;
+    color: #999;
+    cursor: default;
+}
+
+.daypicker table tr td.new:hover {
+    background: none;
+    color: #999;
+    cursor: default;
+}
+
+.daypicker td.day:hover,
+.daypicker td.day:focus {
+    background: #eee;
+    cursor: pointer;
+}
+
+.daypicker table tr td.day.active {
+    background-color: #006dcc;
+    background-image: -moz-linear-gradient(to bottom, #08c, #0044cc);
+    background-image: -ms-linear-gradient(to bottom, #08c, #0044cc);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08c), to(#0044cc));
+    background-image: -webkit-linear-gradient(to bottom, #08c, #0044cc);
+    background-image: -o-linear-gradient(to bottom, #08c, #0044cc);
+    background-image: linear-gradient(to bottom, #08c, #0044cc);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#08c', endColorstr='#0044cc', GradientType=0);
+    border-color: #0044cc #0044cc #002a80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+/* update.interface.php ----------------------------------------- */
+div.winlog {
+    background: #fff;
+    border: 1px solid rgb(0, 70, 140);
+    box-shadow: -3px -3px 10px rgba(0, 133, 178, 0.3);
+    width: 100%;
+    max-width: 100%;
+    max-height: 280px;
+    min-height: 100px;
+    overflow: scroll;
+    font: "Courier New", Courier, monospace;
+    font-size: 0.9em;
+    color: black;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+}
+
+.winlog .textlog {
+    width: 1024px;
+    overflow: visible;
+}
+
+.winlog .textlog td.colnumber {
+    background: #000!important;
+    color: #fff;
+    text-align: left;
+    padding: 2px 4px;
+    margin-right: 10px;
+}
+
+.winlog .textlog td span.coltext {
+    margin: 3px 3px 3px 9px;
+}
+
+.winlog.right .textlog {
+    padding: 8px;
+}
+
+
+/* DEFINITION LIST PROGRESS BAR */
+.progress-block .alert {
+    margin-bottom: 6px!important;
+}
+
+
+/*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks reading the docs.
+ * Requires a base and modifier class.
+ */
+
+
+/* Common styles for all types */
+.bs-callout {
+    margin: 20px 0;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code,
+.bs-callout .highlight {
+    background-color: #fff;
+}
+
+
+/* Variations */
+.bs-callout-danger {
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+}
+
+.bs-callout-warning {
+    background-color: #fefbed;
+    border-color: #f1e7bc;
+}
+
+.bs-callout-info {
+    background-color: #f0f7fd;
+    border-color: #d0e3f0;
+}
+
+
+/* sombra de paneles */
+.panel.win-board {
+    box-shadow: 8px 8px 5px 2px rgba(219, 218, 234, .6);
+}
+
+.panel.ajax-panel {
+    box-shadow: 12px 12px 8px 4px rgba(200, 200, 204, .6);
+    border-radius: 8px;
+}

@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background: white;
+}
+
+._value {
+    font-size:1em;
+    margin:2px;
+}
+
+.flag {
+    font-size:0.9em;
+    font-weight:bold;
+    font-style:italic;
+    padding-right:4px;
+    color:darkslategrey;
+}
+
+.res-name {
+    font-weight:normal;
+    font-size:1.1em;
+    font-style: italic;
+}
+
+ul {
+    cursor:pointer;
+    list-style:none!important;
+}
+
+.peso {
+    margin-left:5px; 
+    font-family:cursive; 
+    font-size:0.8em; 
+    font-weight: normal; 
+    text-decoration:underline; 
+    font-style:oblique; 
+    color:maroon;
+}
+
+.ul_pol {
+    font-size:1em;
+    margin-top:10px;
+    overflow:hidden;
+}
+.ul_ind {
+    font-size:0.9em;
+    margin-top:11px;
+    overflow: hidden;
+}
+.ul_pol.rover {
+    background-color: #e9f1cf;
+}
+.ul_pol.rover-obj {
+    background-color: #e0f3f5;
+}
+.ul_pol.rover-ind, .ul_ind.rover-ind {
+    background-color: #ffd9d9;
+}
+
+.div_inner_ul_li {
+    float:left;
+    display: inline-block;
+}
+
+.div-ajax {
+    overflow:hidden;
+}
+
+.ul_top {
+    margin-top:5px;
+}
+ 
+.strong-title {
+    font-weight:bold;
+    margin-left:4px;
+    margin-right:2px;
+    color:darkslategrey;
+    font-style: italic;
+}

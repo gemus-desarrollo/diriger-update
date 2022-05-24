@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.alarm {
+    margin: 5px 4px 0px 0px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.rotate-90 .alarm {
+    padding: 10px;
+    margin: 0px;
+    border-radius: 4px;
+    border: none!important;
+    min-width: 140px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #5b585b;
+}
+
+.blank {
+    background: #A4E1FF;
+    border: 1px solid #88742e;
+}
+
+.red {
+    background: #FF5B6B;
+    border: 1px solid #88742e;
+    text-decoration: blink;
+}
+
+.orange {
+    background: #FF641A;
+    border: 1px solid #FE423D;
+}
+
+.yellow {
+    background: #ffe763;
+    border: 1px solid #88742e;
+}
+
+.green {
+    background: #00F200;
+    border: 1px solid #88742e;
+}
+
+.dark {
+    background: #E10000;
+    border: 1px solid #88742e;
+    color: #FF0;
+}
+
+.gray {
+    background: #C4C4C4;
+    border: 1px solid #484848;
+    color: #484848;
+}

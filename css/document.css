@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+#div-panel {
+	background:white;
+	width:830px;
+	max-height:265px;
+	display:none;
+	visibility:hidden;
+}
+
+#div-panel-filter {
+    background:white;
+    width:490px;
+    max-height:220px;
+    display:none;
+    visibility:hidden;
+}
+
+/* ---------------------------------------------- */

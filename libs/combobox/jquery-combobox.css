@@ -1,0 +1,29 @@
+.widget-combobox {
+    overflow-y: scroll;
+}
+
+.custom-combobox {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+    background-color: rgba(170, 168, 168, 0.514);
+    width: 24px;
+    height: 28px;
+}
+
+.custom-combobox-input {
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin: 0px;
+}

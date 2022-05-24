@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+#table-res {
+    border:none;
+    margin:5px;
+}
+#table-res td {
+    border:1px solid #333;
+    vertical-align:text-top!important;
+    padding:2px; 
+    min-height:18px;
+    min-width:40px;
+}
+#table-res .td-head {
+    color:#333;
+    font-weight:bolder;
+    text-align:center;
+    vertical-align:bottom;
+    background-color:#EFEFEF;
+}
+#table-res .plan {
+    background-color:#FFC;
+    border-left:none;
+    border-top: none;
+    text-align: right;
+}
+#table-res .real {
+    background-color:#E6FFE6;
+    border-left:none;
+    border-top:none;
+    text-align: right;
+}
+#table-res .sum {
+    background-color:#CFCFA0;
+    border-right:2px solid #88742e;
+    border-left: none;
+    border-top: none;
+    text-align: right;
+}
+#title {
+    text-align:center;
+    font-weight:bold;
+}

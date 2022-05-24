@@ -1,0 +1,64 @@
+/* 
+    Created on : 11-nov-2017, 2:00:57
+    Author     : mustelier
+*/
+
+div.toolbar {
+    font-size: 1rem;
+    width: 100%;
+    position: relative;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+div.toolbar .btn {
+    margin: 0px;
+    box-sizing: border-box;
+    min-width: 50px;
+    height: 22px;
+    top: 0;
+    margin: 0px;
+    display: inline-block;
+}
+
+div.toolbar .btn-left,
+div.toolbar .btn-right {
+    position: absolute;
+    top: 0px;
+    width: 107px;
+    margin: 0px;
+}
+
+div.toolbar .btn-left {
+    left: 0;
+}
+
+div.toolbar .btn-right {
+    right: 0;
+}
+
+div.toolbar .toolbar-center {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    left: 107px;
+    width: 100%;
+}
+
+div.toolbar .center-inside {
+    position: relative;
+    width: 300%;
+    top: 0px;
+    left: 0px;
+}
+
+div.toolbar .center-inside .btn {
+    clear: both;
+    margin: 0px;
+    min-width: 50px;
+    height: 30px;
+    top: 0;
+    display: inline-block;
+}

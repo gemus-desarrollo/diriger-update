@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-sep-2017, 14:52:20
+    Author     : mustelier
+*/
+
+.panel-file {
+    position: relative;
+    width: 100%;
+    min-width: 50px;
+    min-height: 70px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    margin: 10px; 
+    margin-right: 10px;
+    box-sizing: content-box;
+    border: 1px groove rgb(164,225,255);
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(236,234,236,0.8); 
+}
+.panel-file input[type=file] { 
+    position: absolute;
+    top:0;
+    left: 0;
+    overflow: visible;
+    padding: 1px;
+    margin: 0px;
+    width: 99.9%;
+    min-height: 70px;
+    height: 100vh;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0;
+    line-height: 0;
+
+    opacity: 0;
+   -moz-opacity: 0;
+   filter: alpha(opacity=0);
+   -khtml-opacity: 0; 
+   cursor: pointer;
+}             
+.panel-file .title {
+    font-size: 1em;
+    color: #c4c4c4;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+.panel-file .img {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 99.9%;
+    border: none;
+    border-radius: 8px;
+    height: min-content;
+    min-height: 69px;
+
+    margin: 1px;
+    padding: 0px;
+    align-content: center;
+    text-align: center;
+    border: none;
+}
+.panel-file .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2px;
+    font-size: 0.95em;
+}
+.panel-file .upload-trash {
+    cursor: pointer;
+        
+}
+            

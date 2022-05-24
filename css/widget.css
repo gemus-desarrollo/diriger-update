@@ -1,0 +1,122 @@
+#bit, #bit *{
+    *zoom:1;
+}
+
+.loggedout-follow-shelf {
+    position:fixed;
+    right:40%;
+    z-index:999999;
+    bottom:-300px;}
+
+.loggedout-follow-normal {
+    position:fixed;
+    z-index:999999;
+    bottom:-300px;
+    right:10px;
+}
+.loggedout-follow-norma .bitsubscribe ul li i.fa {
+    margin: 4px 10px 4px 4px !important;
+    background: #fff;
+}
+
+.loggedout-follow-typekit {
+    margin-right:4.5em;
+    position:fixed;
+    z-index:999999;
+    bottom:-300px;
+    right:10px;
+}
+
+#bit a.bsub {
+    display: block;
+    overflow: hidden;
+    padding: 0 10px 0 8px;
+    float: right;
+    text-decoration: none!important;
+    line-height: 28px; 
+
+    letter-spacing:normal;
+    border:0;
+    
+    color:#000;
+    background: rgba(170,170,170,0.6);
+
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.20);
+    outline-style: none;
+    outline-width: 0;
+}
+
+#bit a.bsub {
+    border-radius:2px 2px 0 0 0;
+}
+
+#bit a:hover span, #bit a.bsub.open span {
+    color: #000;
+    background-position:0 -117px;
+}
+
+#bit a.bsub.open {
+
+}
+
+#bitsubscribe {
+    background: rgba(238,238,238,0.4);
+
+    color:#000;
+    padding:15px;
+    margin-top:27px;
+    max-height: available;
+
+    border-radius:2px 0 0 0;
+    
+    *float:right;
+    *margin-right:-68px;
+}
+
+#bitsubscribe .item {
+    background: rgba(238,238,238,0.4);
+    
+    border: none;
+    color:#000;
+    
+    padding: 5px 3px;
+    vertical-align:top;
+    text-align: left;
+}
+
+div#bitsubscribe.open {
+    box-shadow:0 0 8px rgba(0,0,0,0.5);
+}
+
+#bitsubscribe div {
+    overflow:hidden;
+}
+
+#bitsubscribe p a{
+    margin:20px 0 0;
+}
+
+#bitsubscribe #bsub-credit a:hover{
+    color:#fff;
+    background:none;
+}
+
+
+
+
+
+#notify-container { 
+    width:99%;
+    height:28px; 
+    background-color:#FFFFFF;
+
+    left:0;
+    top:0;
+    margin:0px; 
+    padding:0px;
+    position:fixed; 
+}
+
+.clearfix {
+	
+}

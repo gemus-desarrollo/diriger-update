@@ -1,0 +1,36 @@
+.dashboard {
+    background: rgb(68, 85, 102) none repeat scroll 0% 0%;
+    color: #000000;
+}
+
+.kanban {
+    overflow-x: auto;
+}
+
+.success {
+    background: #00b961;
+}
+
+.info {
+    background: #2a92bf;
+}
+
+.warning {
+    background: #f4ce46;
+}
+
+.error {
+    background: #fb7d44;
+}
+
+.custom-button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 2px 2px;
+    margin: 2px 2px 2px 8px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

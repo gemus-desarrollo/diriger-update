@@ -1,0 +1,142 @@
+body {
+	background-color: white;
+	background-image:url(../img/quienes_somos_r3_c2.jpg);
+	background-repeat: repeat;
+	margin:0px;
+}
+
+.form {
+	border:#9C1251 2px solid;
+	-moz-border-radius: 10px;
+	margin-left:10px;
+	padding:4px;
+	background-image:url(../img/index_r5_c10.jpg);
+	color:#FFF;
+}
+
+.grid-fieldset {
+	border: 1px groove #9F9FFF;
+	background-color:#1a1a1a;
+	padding:5px;
+	margin:0px;
+	margin-top:10px;
+	color:white;
+	width: 420px;
+}
+
+
+.grid-legend {
+	color: #fff;
+	background: #2e3192;
+	border: 1px solid #2e3192;
+	margin:0px;
+	padding: 2px 6px;
+}
+
+.title-module{
+	color:white;
+	font-weight:bolder;
+	padding:5px;
+	line-height:30px;
+	font-stretch:extra-condensed;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:15px;
+	text-shadow:#FF0 2px;
+}
+
+.lote_submit {
+    cursor:pointer;
+    background-image:url(../img/index_r2_c11.jpg);
+    color:#FFFFFF;
+    border:#000000 2px solid;
+    padding:4px;
+    font-weight:bold;
+}
+
+.lote_submit:hover {
+    color:yellow;
+    border:#FF0 1px solid;
+}
+
+.lote_submited {
+    cursor:default;
+    color:#FF0000;
+    border:none;
+    padding:4px;
+    font-weight:bold;
+    font-size:2em !important;
+}
+
+._icon {
+    height:20px;
+    top:0px;
+
+    margin:0px;
+    padding:0px;
+    padding-left:4px;
+
+    float:right;
+    text-align:center;
+    vertical-align:middle;
+    font:normal;
+
+    cursor:pointer;
+    border:none;
+    border-right:#CCCCCC 1px inset;
+    z-index:10000;
+
+    background-repeat:no-repeat;
+    width:80px;
+}
+
+._icon img{
+    padding:3px;
+    height:20px;
+    width:20px;
+    cursor:pointer;
+    border:none;
+}
+
+._icon:hover {
+    padding:1px;
+    cursor:pointer;
+    border:none;
+    color:yellow;
+    border-right:#CCCCCC 1px inset;
+}
+
+._msg {
+    background:#FF0;
+    border:#F00 2px solid;
+    padding:4px;
+    margin:5px;
+    margin-bottom:10px;
+    width:550px;
+    font-weight:9px;
+    color:#F00;
+    text-align:left;
+}
+
+.winlog {
+    width:400px;
+    height:220px;
+    overflow:scroll;
+
+    border:1px groove #824100;
+
+    font:"Courier New", Courier, monospace;
+    font-size:9px;
+    background:#FFFFFF;
+    color:black;
+}
+
+.colnumber {
+    font-weight:bold;
+    width:25px!important;
+    background-color:#D2D2D2;
+    border:none;
+    border-right:1px solid #000000;
+    padding:2px;
+    margin-right:5px;
+}
+

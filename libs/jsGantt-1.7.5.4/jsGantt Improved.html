@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html class="no-js fa-events-icons-ready" lang="en"><!-- Head --><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Meta data -->
+    <meta charset="utf-8">
+    <title>jsGantt Improved</title>
+    <meta name="description" content="FREE javascript gantt - jsGantt Improved HTML, CSS and AJAX only">
+    <meta name="keywords" content="jsgantt-improved free javascript gantt-chart html css ajax">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- External resources -->
+    <!-- jQuery + Ajax [required by Bootstrap] -->
+      <script src="jsGantt%20Improved%20Archivos/jquery-3.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="jsGantt%20Improved%20Archivos/tether.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <!-- Required by smooth scrolling -->
+        <script src="jsGantt%20Improved%20Archivos/jquery.js"></script>
+    <!-- Bootstrap v4.0.0 Alpha -->
+      <link href="jsGantt%20Improved%20Archivos/bootstrap.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <script src="jsGantt%20Improved%20Archivos/bootstrap.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+      <script src="jsGantt%20Improved%20Archivos/78d1e57168.js"></script><link href="jsGantt%20Improved%20Archivos/78d1e57168.css" media="all" rel="stylesheet">
+    <!-- Google's Code Prettify -->
+      <link rel="stylesheet" type="text/css" href="jsGantt%20Improved%20Archivos/sunburst.css">
+    <!-- Google Fonts -->
+      <link href="jsGantt%20Improved%20Archivos/css.css" rel="stylesheet">
+
+  <!-- Internal resources -->
+    <!-- Webpage -->
+      <link href="jsGantt%20Improved%20Archivos/main.css" rel="stylesheet" type="text/css">
+      <script src="jsGantt%20Improved%20Archivos/main.js" type="text/javascript"></script>
+    <!-- jsGanttImproved App -->
+      <link href="jsGantt%20Improved%20Archivos/jsgantt.css" rel="stylesheet" type="text/css">
+      <script src="jsGantt%20Improved%20Archivos/jsgantt.js" type="text/javascript"></script>
+  </head>
+
+<!-- Content -->
+  <body data-spy="scroll" data-target="#my-navbar-nav">
+  <!-- Navigation bar -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#my-navbar-nav" aria-controls="my-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand product-name" id="my-nav-brand" href="#home">jsGanttImproved</a>
+
+      <div class="collapse navbar-collapse" id="my-navbar-nav">
+        <ul class="navbar-nav mr-auto" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#demo">Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#usage">Usage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#credits">Credits</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="btn btn-outline-danger my-2 my-sm-0 mx-1" href="https://api.github.com/repos/jsGanttImproved/jsgantt-improved/zipball">Download</a>
+          <a class="btn btn-outline-primary my-2 my-sm-0 mx-1" href="https://github.com/jsGanttImproved/jsgantt-improved" target="_blank">View on GitHub</a>
+        </form>
+      </div>
+    </nav>
+
+  <!-- Content -->
+    <!-- Home -->
+      <div class="container-fluid" id="home">
+        <div class="row"> 
+          <div class="col-lg-6 text-center">
+            <h1 class="display-1 product-name" id="home-title">jsGanttImproved</h1>
+            <h2 class="display-2" id="home-subtitle">latest v1.7.5.4</h2>
+            <a class="btn btn-danger my-2 my-sm-0 mx-1" href="https://api.github.com/repos/jsGanttImproved/jsgantt-improved/zipball">Download</a>
+            <a class="btn btn-primary my-2 my-sm-0 mx-1" href="https://github.com/jsGanttImproved/jsgantt-improved" target="_blank">View on GitHub</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="card text-center" id="slide-card">
+              <div class="card-block">
+                <span class="card-text slide" style="display: inline-block; opacity: 1;">
+                  <p><i class="fa fa-code slide-icon"></i></p>
+                  <p>100% HTML + CSS + JavaScript Gantt Chart</p>
+                </span>
+                <span class="card-text slide" style="display: none; opacity: 1;">
+                  <p><i class="fa fa-usd slide-icon"></i></p>
+                  <p>Completely FREE</p>
+                </span>
+                <span class="card-text slide" style="display: none; opacity: 1;">
+                  <p><i class="fa fa-github slide-icon"></i></p>
+                  <p>Open source</p>
+                </span>
+              </div>
+              <div class="card-footer text-muted" id="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <a class="btn btn-outline-info" href="#demo" id="learn-more"><i class="fa fa-chevron-down"></i></a>
+          </div>
+        </div>
+      </div>
+    <!-- Demo -->
+      <div class="container-fluid section" id="demo">
+        <h1>Demo</h1>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary btn-demo active" aria-pressed="true">
+            <input type="checkbox" autocomplete="off" checked="checked"><i class="fa fa-code"></i> Embedded Code
+          </label>
+          <label class="btn btn-primary btn-demo" aria-pressed="true">
+            <input type="checkbox" autocomplete="off" checked="checked"><i class="fa fa-file-code-o"></i> External XML File
+          </label>
+        </div>
+        <div id="embedded-Gantt" style=""><div class="gchartcontainer"><div id="embedded-Ganttglisthead" class="glistlbl gcontainercol"><table class="gtasktableh"><tbody><tr><td class="gtasklist">&nbsp;</td><td class="gspanning gtaskname"><div class="gselector">Format:<span id="embedded-Ganttformatdaytop" class="gformlabel">Day</span><span id="embedded-Ganttformatweektop" class="gformlabel gselected">Week</span><span id="embedded-Ganttformatmonthtop" class="gformlabel">Month</span><span id="embedded-Ganttformatquartertop" class="gformlabel">Quarter</span></div></td><td class="gspanning gresource">&nbsp;</td><td class="gspanning gduration">&nbsp;</td><td class="gspanning gpccomplete">&nbsp;</td><td class="gspanning gstartdate">&nbsp;</td><td class="gspanning genddate">&nbsp;</td></tr><tr><td class="gtasklist">&nbsp;</td><td class="gtaskname">&nbsp;</td><td class="gtaskheading gresource">Resource</td><td class="gtaskheading gduration">Duration</td><td class="gtaskheading gpccomplete">%</td><td class="gtaskheading gstartdate">Start Date</td><td class="gtaskheading genddate">End Date</td></tr></tbody></table></div><div id="embedded-Ganttgcharthead" class="gchartlbl gcontainercol"><table id="embedded-GanttchartTableh" class="gcharttableh"><tbody><tr><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td><td class="gmajorheading" style="width: 36px;"><div style="width: 36px;">2017</div></td></tr><tr><td class="gminorheading"><div style="width: 36px;">13 Feb</div></td><td class="gminorheading"><div style="width: 36px;">20 Feb</div></td><td class="gminorheading"><div style="width: 36px;">27 Feb</div></td><td class="gminorheading"><div style="width: 36px;">06 Mar</div></td><td class="gminorheading"><div style="width: 36px;">13 Mar</div></td><td class="gminorheading"><div style="width: 36px;">20 Mar</div></td><td class="gminorheading"><div style="width: 36px;">27 Mar</div></td><td class="gminorheading"><div style="width: 36px;">03 Apr</div></td><td class="gminorheading"><div style="width: 36px;">10 Apr</div></td><td class="gminorheading"><div style="width: 36px;">17 Apr</div></td><td class="gminorheading"><div style="width: 36px;">24 Apr</div></td><td class="gminorheading"><div style="width: 36px;">01 May</div></td><td class="gminorheading"><div style="width: 36px;">08 May</div></td><td class="gminorheading"><div style="width: 36px;">15 May</div></td><td class="gminorheading"><div style="width: 36px;">22 May</div></td><td class="gminorheading"><div style="width: 36px;">29 May</div></td><td class="gminorheading"><div style="width: 36px;">05 Jun</div></td><td class="gminorheading"><div style="width: 36px;">12 Jun</div></td><td class="gminorheading"><div style="width: 36px;">19 Jun</div></td><td class="gminorheading"><div style="width: 36px;">26 Jun</div></td><td class="gminorheading"><div style="width: 36px;">03 Jul</div></td><td class="gminorheading"><div style="width: 36px;">10 Jul</div></td><td class="gminorheading"><div style="width: 36px;">17 Jul</div></td><td class="gminorheading"><div style="width: 36px;">24 Jul</div></td><td class="gminorheading"><div style="width: 36px;">31 Jul</div></td><td class="gminorheading"><div style="width: 36px;">07 Aug</div></td><td class="gminorheading"><div style="width: 36px;">14 Aug</div></td><td class="gminorheading"><div style="width: 36px;">21 Aug</div></td><td class="gminorheading"><div style="width: 36px;">28 Aug</div></td><td class="gminorheading"><div style="width: 36px;">04 Sep</div></td></tr></tbody></table><div class="rhscrpad" style="left: 1112px;"></div></div><div class="glabelfooter"></div><div id="embedded-Ganttglistbody" class="glistgrid gcontainercol"><table class="gtasktable"><tbody><tr id="embedded-Ganttchild_1" class="gname ggroupitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div><span id="embedded-Ganttgroup_1" class="gfoldercollapse">-</span>&nbsp;Define Chart API</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>38 Days</div></td><td class="gpccomplete"><div>61%</div></td><td class="gstartdate"><div>20/02/2017</div></td><td class="genddate"><div>29/03/2017</div></td></tr><tr id="embedded-Ganttchild_11" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chart Object</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>-</div></td><td class="gpccomplete"><div>100%</div></td><td class="gstartdate"><div>20/02/2017</div></td><td class="genddate"><div>20/02/2017</div></td></tr><tr id="embedded-Ganttchild_12" class="gname ggroupitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;<span id="embedded-Ganttgroup_12" class="gfoldercollapse">-</span>&nbsp;Task Objects</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>37 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>21/02/2017</div></td><td class="genddate"><div>29/03/2017</div></td></tr><tr id="embedded-Ganttchild_121" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructor Proc</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>17 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>21/02/2017</div></td><td class="genddate"><div>09/03/2017</div></td></tr><tr id="embedded-Ganttchild_122" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Task Variables</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>6 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>06/03/2017</div></td><td class="genddate"><div>11/03/2017</div></td></tr><tr id="embedded-Ganttchild_123" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Task by Minute/Hour</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>5.5 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>09/03/2017</div></td><td class="genddate"><div>14/03/2017</div></td></tr><tr id="embedded-Ganttchild_124" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Task Functions</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>21 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>09/03/2017</div></td><td class="genddate"><div>29/03/2017</div></td></tr><tr id="embedded-Ganttchild_3" class="gname ggroupitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div><span id="embedded-Ganttgroup_3" class="gfoldercollapse">-</span>&nbsp;Code Javascript</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>192 Days</div></td><td class="gpccomplete"><div>43%</div></td><td class="gstartdate"><div>25/02/2017</div></td><td class="genddate"><div>04/09/2017</div></td></tr><tr id="embedded-Ganttchild_31" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Define Variables</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>21 Days</div></td><td class="gpccomplete"><div>30%</div></td><td class="gstartdate"><div>25/02/2017</div></td><td class="genddate"><div>17/03/2017</div></td></tr><tr id="embedded-Ganttchild_33" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw Task Items</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>15 Days</div></td><td class="gpccomplete"><div>16%</div></td><td class="gstartdate"><div>06/03/2017</div></td><td class="genddate"><div>20/03/2017</div></td></tr><tr id="embedded-Ganttchild_32" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate Chart Size</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>10 Days</div></td><td class="gpccomplete"><div>40%</div></td><td class="gstartdate"><div>15/03/2017</div></td><td class="genddate"><div>24/03/2017</div></td></tr><tr id="embedded-Ganttchild_34" class="gname ggroupitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;<span id="embedded-Ganttgroup_34" class="gfoldercollapse">+</span>&nbsp;Draw Task Bars</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>71 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>26/03/2017</div></td><td class="genddate"><div>04/06/2017</div></td></tr><tr id="embedded-Ganttchild_341" class="gname glineitem" style="display: none;"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loop each Task</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>17 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>26/03/2017</div></td><td class="genddate"><div>11/04/2017</div></td></tr><tr id="embedded-Ganttchild_342" class="gname glineitem" style="display: none;"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate Start/Stop</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>37 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>12/04/2017</div></td><td class="genddate"><div>18/05/2017</div></td></tr><tr id="embedded-Ganttchild_343" class="gname glineitem" style="display: none;"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw Task Div</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>5 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>13/05/2017</div></td><td class="genddate"><div>17/05/2017</div></td></tr><tr id="embedded-Ganttchild_344" class="gname glineitem" style="display: none;"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw Completion Div</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>19 Days</div></td><td class="gpccomplete"><div>60%</div></td><td class="gstartdate"><div>17/05/2017</div></td><td class="genddate"><div>04/06/2017</div></td></tr><tr id="embedded-Ganttchild_35" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make Updates</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>50 Days</div></td><td class="gpccomplete"><div>30%</div></td><td class="gstartdate"><div>17/07/2017</div></td><td class="genddate"><div>04/09/2017</div></td></tr><tr id="embedded-Ganttchild_2" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;Create HTML Shell</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>1 Day</div></td><td class="gpccomplete"><div>20%</div></td><td class="gstartdate"><div>24/03/2017</div></td><td class="genddate"><div>24/03/2017</div></td></tr><tr><td class="gtasklist">&nbsp;</td><td class="gspanning gtaskname"><div class="gselector"></div></td><td class="gspanning gresource">&nbsp;</td><td class="gspanning gduration">&nbsp;</td><td class="gspanning gpccomplete">&nbsp;</td><td class="gspanning gstartdate">&nbsp;</td><td class="gspanning genddate">&nbsp;</td></tr></tbody></table><br><br></div><div id="embedded-Ganttgchartbody" class="gchartgrid gcontainercol"><table id="embedded-GanttchartTable" class="gcharttable" style="width: 1111px;"><tbody><tr id="embedded-Ganttchildrow_1" class="ggroupitem ggroupweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_1" class="gtaskbarcontainer" style="width: 200px; left: 37px;"><div id="embedded-Gantttaskbar_1" class="ggroupblack" style="width: 200px;"><div id="embedded-Ganttcomplete_1" class="ggroupblackcomplete" style="width: 61%;"></div></div><div class="ggroupblackendpointleft"></div><div class="ggroupblackendpointright"></div><div class="ggroupcaption" style="width: 120px;">61%</div><div id="embedded-Gantttt1" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Define Chart API</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Mon 20 February 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Wed 29 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">38 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">61%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes">Some Notes text</span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_11" class="gmileitem gmileweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_11" class="gtaskbarcontainer" style="width: 12px; left: 31px;"><div id="embedded-Gantttaskbar_11" class="gmilestone" style="width: 12px;"><div class="gmilediamond"><div class="gmdtop"></div><div class="gmdbottom"></div></div></div><div class="gmilecaption" style="width: 120px; left: 12px;">100%</div><div id="embedded-Gantttt11" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Chart Object</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Mon 20 February 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Mon 20 February 2017</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">100%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Shlomy</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_12" class="ggroupitem ggroupweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_12" class="gtaskbarcontainer" style="width: 195px; left: 43px;"><div id="embedded-Gantttaskbar_12" class="ggroupblack" style="width: 195px;"><div id="embedded-Ganttcomplete_12" class="ggroupblackcomplete" style="width: 60%;"></div></div><div class="ggroupblackendpointleft"></div><div class="ggroupblackendpointright"></div><div class="ggroupcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt12" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Task Objects</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Tue 21 February 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Wed 29 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">37 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Shlomy</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_121" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_121" class="gtaskbarcontainer" style="width: 89px; left: 43px;"><div id="embedded-Gantttaskbar_121" class="gtaskblue" style="width: 89px;"><div id="embedded-Ganttcomplete_121" class="gtaskbluecomplete" style="width: 60%;"></div></div><div class="gcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt121" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Constructor Proc</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Tue 21 February 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Thu 09 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">17 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian T.</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_122" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_122" class="gtaskbarcontainer" style="width: 31px; left: 111px;"><div id="embedded-Gantttaskbar_122" class="gtaskred" style="width: 31px;"><div id="embedded-Ganttcomplete_122" class="gtaskredcomplete" style="width: 60%;"></div></div><div class="gcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt122" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Task Variables</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Mon 06 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Sat 11 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">6 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_123" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_123" class="gtaskbarcontainer" style="width: 29px; left: 127px;"><div id="embedded-Gantttaskbar_123" class="gtaskyellow" style="width: 29px;"><div id="embedded-Ganttcomplete_123" class="gtaskyellowcomplete" style="width: 60%;"></div></div><div class="gcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt123" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Task by Minute/Hour</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Thu 09 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Tue 14 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">5.5 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Ilan</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_124" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_124" class="gtaskbarcontainer" style="width: 110px; left: 127px;"><div id="embedded-Gantttaskbar_124" class="gtaskred" style="width: 110px;"><div id="embedded-Ganttcomplete_124" class="gtaskredcomplete" style="width: 60%;"></div></div><div class="gcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt124" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Task Functions</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Thu 09 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Wed 29 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">21 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Anyone</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_3" class="ggroupitem ggroupweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_3" class="gtaskbarcontainer" style="width: 1014px; left: 64px;"><div id="embedded-Gantttaskbar_3" class="ggroupblack" style="width: 1014px;"><div id="embedded-Ganttcomplete_3" class="ggroupblackcomplete" style="width: 43%;"></div></div><div class="ggroupblackendpointleft"></div><div class="ggroupblackendpointright"></div><div class="ggroupcaption" style="width: 120px;">43%</div><div id="embedded-Gantttt3" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Code Javascript</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Sat 25 February 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Mon 04 September 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">192 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">43%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_31" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_31" class="gtaskbarcontainer" style="width: 110px; left: 64px;"><div id="embedded-Gantttaskbar_31" class="gtaskpurple" style="width: 110px;"><div id="embedded-Ganttcomplete_31" class="gtaskpurplecomplete" style="width: 30%;"></div></div><div class="gcaption" style="width: 120px;">30%</div><div id="embedded-Gantttt31" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Define Variables</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Sat 25 February 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Fri 17 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">21 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">30%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_33" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_332" class="gtaskbarcontainer" style="width: 21px; left: 111px;"><div id="embedded-Gantttaskbar_332" class="gtaskblue" style="width: 21px;"><div id="embedded-Ganttcomplete_332" class="gtaskbluecomplete" style="width: 60%;"></div></div><div id="embedded-Gantttt332" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Task Label Table</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Mon 06 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Thu 09 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">4 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div><div id="embedded-Ganttbardiv_333" class="gtaskbarcontainer" style="width: 52px; left: 138px;"><div id="embedded-Gantttaskbar_333" class="gtaskblue" style="width: 52px;"><div id="embedded-Ganttcomplete_333" class="gtaskbluecomplete"></div></div><div class="gcaption" style="width: 120px;">16%</div><div id="embedded-Gantttt333" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Task Scrolling Grid</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Sat 11 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Mon 20 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">10 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText"></span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_32" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_32" class="gtaskbarcontainer" style="width: 52px; left: 159px;"><div id="embedded-Gantttaskbar_32" class="gtaskgreen" style="width: 52px;"><div id="embedded-Ganttcomplete_32" class="gtaskgreencomplete" style="width: 40%;"></div></div><div class="gcaption" style="width: 120px;">40%</div><div id="embedded-Gantttt32" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Calculate Chart Size</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Wed 15 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Fri 24 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">10 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">40%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Shlomy</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_34" class="ggroupitem ggroupweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_34" class="gtaskbarcontainer" style="width: 375px; left: 217px;"><div id="embedded-Gantttaskbar_34" class="ggroupblack" style="width: 375px;"><div id="embedded-Ganttcomplete_34" class="ggroupblackcomplete" style="width: 60%;"></div></div><div class="ggroupblackendpointleft"></div><div class="ggroupblackendpointright"></div><div class="ggroupcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt34" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Draw Task Bars</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Sun 26 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Sun 04 June 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">71 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Anybody</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_341" class="glineitem gitemweek" style="display: none;"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_341" class="gtaskbarcontainer" style="width: 89px; left: 217px;"><div id="embedded-Gantttaskbar_341" class="gtaskred" style="width: 89px;"><div id="embedded-Ganttcomplete_341" class="gtaskredcomplete" style="width: 60%;"></div></div><div class="gcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt341" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Loop each Task</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Sun 26 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Tue 11 April 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">17 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_342" class="glineitem gitemweek" style="display: none;"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_342" class="gtaskbarcontainer" style="width: 195px; left: 307px;"><div id="embedded-Gantttaskbar_342" class="gtaskpink" style="width: 195px;"><div id="embedded-Ganttcomplete_342" class="gtaskpinkcomplete" style="width: 60%;"></div></div><div class="gcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt342" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Calculate Start/Stop</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Wed 12 April 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Thu 18 May 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">37 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_343" class="glineitem gitemweek" style="display: none;"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_343" class="gtaskbarcontainer" style="width: 26px; left: 471px;"><div id="embedded-Gantttaskbar_343" class="gtaskred" style="width: 26px;"><div id="embedded-Ganttcomplete_343" class="gtaskredcomplete" style="width: 60%;"></div></div><div class="gcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt343" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Draw Task Div</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Sat 13 May 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Wed 17 May 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">5 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_344" class="glineitem gitemweek" style="display: none;"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_344" class="gtaskbarcontainer" style="width: 100px; left: 492px;"><div id="embedded-Gantttaskbar_344" class="gtaskred" style="width: 100px;"><div id="embedded-Ganttcomplete_344" class="gtaskredcomplete" style="width: 60%;"></div></div><div class="gcaption" style="width: 120px;">60%</div><div id="embedded-Gantttt344" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Draw Completion Div</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Wed 17 May 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Sun 04 June 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">19 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_35" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_35" class="gtaskbarcontainer" style="width: 264px; left: 814px;"><div id="embedded-Gantttaskbar_35" class="gtaskpurple" style="width: 264px;"><div id="embedded-Ganttcomplete_35" class="gtaskpurplecomplete" style="width: 30%;"></div></div><div class="gcaption" style="width: 120px;">30%</div><div id="embedded-Gantttt35" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Make Updates</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Mon 17 July 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Mon 04 September 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">50 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">30%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr id="embedded-Ganttchildrow_2" class="glineitem gitemweek"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="embedded-Ganttbardiv_2" class="gtaskbarcontainer" style="width: 5px; left: 207px;"><div id="embedded-Gantttaskbar_2" class="gtaskyellow" style="width: 5px;"><div id="embedded-Ganttcomplete_2" class="gtaskyellowcomplete" style="width: 20%;"></div></div><div class="gcaption" style="width: 120px;">20%</div><div id="embedded-Gantttt2" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Create HTML Shell</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Fri 24 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Fri 24 March 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">1 Day</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">20%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Brian</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td></tr><tr><td class="gminorheading"><div style="width: 36px;">13 Feb</div></td><td class="gminorheading"><div style="width: 36px;">20 Feb</div></td><td class="gminorheading"><div style="width: 36px;">27 Feb</div></td><td class="gminorheading"><div style="width: 36px;">06 Mar</div></td><td class="gminorheading"><div style="width: 36px;">13 Mar</div></td><td class="gminorheading"><div style="width: 36px;">20 Mar</div></td><td class="gminorheading"><div style="width: 36px;">27 Mar</div></td><td class="gminorheading"><div style="width: 36px;">03 Apr</div></td><td class="gminorheading"><div style="width: 36px;">10 Apr</div></td><td class="gminorheading"><div style="width: 36px;">17 Apr</div></td><td class="gminorheading"><div style="width: 36px;">24 Apr</div></td><td class="gminorheading"><div style="width: 36px;">01 May</div></td><td class="gminorheading"><div style="width: 36px;">08 May</div></td><td class="gminorheading"><div style="width: 36px;">15 May</div></td><td class="gminorheading"><div style="width: 36px;">22 May</div></td><td class="gminorheading"><div style="width: 36px;">29 May</div></td><td class="gminorheading"><div style="width: 36px;">05 Jun</div></td><td class="gminorheading"><div style="width: 36px;">12 Jun</div></td><td class="gminorheading"><div style="width: 36px;">19 Jun</div></td><td class="gminorheading"><div style="width: 36px;">26 Jun</div></td><td class="gminorheading"><div style="width: 36px;">03 Jul</div></td><td class="gminorheading"><div style="width: 36px;">10 Jul</div></td><td class="gminorheading"><div style="width: 36px;">17 Jul</div></td><td class="gminorheading"><div style="width: 36px;">24 Jul</div></td><td class="gminorheading"><div style="width: 36px;">31 Jul</div></td><td class="gminorheading"><div style="width: 36px;">07 Aug</div></td><td class="gminorheading"><div style="width: 36px;">14 Aug</div></td><td class="gminorheading"><div style="width: 36px;">21 Aug</div></td><td class="gminorheading"><div style="width: 36px;">28 Aug</div></td><td class="gminorheading"><div style="width: 36px;">04 Sep</div></td></tr></tbody></table><div class="rhscrpad" style="left: 1112px;"></div><div id="embedded-GanttLines" class="glinediv" style="visibility: hidden;"><div id="embedded-Ganttline1" style="position: absolute; overflow: hidden; z-index: 0; left: 133px; top: 66px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="embedded-Ganttline2" style="position: absolute; overflow: hidden; z-index: 0; left: 137px; top: 66px; width: 1px; height: 10px; visibility: visible;" class="glinev gDepFS"></div><div id="embedded-Ganttline3" style="position: absolute; overflow: hidden; z-index: 0; left: 103px; top: 75px; width: 35px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="embedded-Ganttline4" style="position: absolute; overflow: hidden; z-index: 0; left: 103px; top: 75px; width: 1px; height: 11px; visibility: visible;" class="glinev gDepFS"></div><div id="embedded-Ganttline5" style="position: absolute; overflow: hidden; z-index: 0; left: 103px; top: 85px; width: 8px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="embedded-Ganttline6" style="position: absolute; overflow: hidden; z-index: 0; left: 108px; top: 82px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div><div id="embedded-Ganttline7" style="position: absolute; overflow: hidden; z-index: 0; left: 119px; top: 104px; width: 9px; height: 1px; visibility: visible;" class="glineh gDepSS"></div><div id="embedded-Ganttline8" style="position: absolute; overflow: hidden; z-index: 0; left: 119px; top: 104px; width: 1px; height: 20px; visibility: visible;" class="glinev gDepSS"></div><div id="embedded-Ganttline9" style="position: absolute; overflow: hidden; z-index: 0; left: 119px; top: 123px; width: 8px; height: 1px; visibility: visible;" class="glineh gDepSS"></div><div id="embedded-Ganttline10" style="position: absolute; overflow: hidden; z-index: 0; left: 124px; top: 120px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepSSArw"></div><div id="embedded-Ganttline11" style="position: absolute; overflow: hidden; z-index: 0; left: 133px; top: 180px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="embedded-Ganttline12" style="position: absolute; overflow: hidden; z-index: 0; left: 135px; top: 177px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div><div id="embedded-Ganttline13" style="position: absolute; overflow: hidden; z-index: 0; left: 191px; top: 180px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="embedded-Ganttline14" style="position: absolute; overflow: hidden; z-index: 0; left: 195px; top: 180px; width: 1px; height: 58px; visibility: visible;" class="glinev gDepFS"></div><div id="embedded-Ganttline15" style="position: absolute; overflow: hidden; z-index: 0; left: 195px; top: 237px; width: 619px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="embedded-Ganttline16" style="position: absolute; overflow: hidden; z-index: 0; left: 811px; top: 234px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div><div id="embedded-Ganttline17" style="position: absolute; overflow: hidden; z-index: 0; left: 143px; top: 85px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="embedded-Ganttline18" style="position: absolute; overflow: hidden; z-index: 0; left: 147px; top: 85px; width: 1px; height: 172px; visibility: visible;" class="glinev gDepFS"></div><div id="embedded-Ganttline19" style="position: absolute; overflow: hidden; z-index: 0; left: 147px; top: 256px; width: 60px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="embedded-Ganttline20" style="position: absolute; overflow: hidden; z-index: 0; left: 204px; top: 253px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div></div></div><div class="ggridfooter"></div></div>
+        </div>
+        <div id="external-Gantt" style="display: none;"><div class="gchartcontainer"><div id="external-Ganttglisthead" class="glistlbl gcontainercol"><table class="gtasktableh"><tbody><tr><td class="gtasklist">&nbsp;</td><td class="gspanning gtaskname"><div class="gselector">Format:<span id="external-Ganttformathourtop" class="gformlabel">Hour</span><span id="external-Ganttformatdaytop" class="gformlabel gselected">Day</span><span id="external-Ganttformatweektop" class="gformlabel">Week</span><span id="external-Ganttformatmonthtop" class="gformlabel">Month</span><span id="external-Ganttformatquartertop" class="gformlabel">Quarter</span></div></td><td class="gspanning gresource">&nbsp;</td><td class="gspanning gduration">&nbsp;</td><td class="gspanning gpccomplete">&nbsp;</td><td class="gspanning gstartdate">&nbsp;</td><td class="gspanning genddate">&nbsp;</td></tr><tr><td class="gtasklist">&nbsp;</td><td class="gtaskname">&nbsp;</td><td class="gtaskheading gresource">Resource</td><td class="gtaskheading gduration">Duration</td><td class="gtaskheading gpccomplete">%</td><td class="gtaskheading gstartdate">Start Date</td><td class="gtaskheading genddate">End Date</td></tr></tbody></table></div><div id="external-Ganttgcharthead" class="gchartlbl gcontainercol"><table id="external-GanttchartTableh" class="gcharttableh"><tbody><tr><td class="gmajorheading" colspan="7"><div style="width: 126px;">08 May - 14 May</div></td><td class="gmajorheading" colspan="7"><div style="width: 126px;">15 May - 21 May</div></td><td class="gmajorheading" colspan="7"><div style="width: 126px;">22 May - 28 May</div></td></tr><tr><td class="gminorheading"><div style="width: 18px;">08</div></td><td class="gminorheading"><div style="width: 18px;">09</div></td><td class="gminorheading"><div style="width: 18px;">10</div></td><td class="gminorheading"><div style="width: 18px;">11</div></td><td class="gminorheading"><div style="width: 18px;">12</div></td><td class="gminorheadingwkend"><div style="width: 18px;">13</div></td><td class="gminorheadingwkend"><div style="width: 18px;">14</div></td><td class="gminorheading"><div style="width: 18px;">15</div></td><td class="gminorheading"><div style="width: 18px;">16</div></td><td class="gminorheading"><div style="width: 18px;">17</div></td><td class="gminorheading"><div style="width: 18px;">18</div></td><td class="gminorheading"><div style="width: 18px;">19</div></td><td class="gminorheadingwkend"><div style="width: 18px;">20</div></td><td class="gminorheadingwkend"><div style="width: 18px;">21</div></td><td class="gminorheading"><div style="width: 18px;">22</div></td><td class="gminorheading"><div style="width: 18px;">23</div></td><td class="gminorheading"><div style="width: 18px;">24</div></td><td class="gminorheading"><div style="width: 18px;">25</div></td><td class="gminorheading"><div style="width: 18px;">26</div></td><td class="gminorheadingwkend"><div style="width: 18px;">27</div></td><td class="gminorheadingwkend"><div style="width: 18px;">28</div></td></tr></tbody></table><div class="rhscrpad" style="left: 401px;"></div></div><div class="glabelfooter"></div><div id="external-Ganttglistbody" class="glistgrid gcontainercol"><table class="gtasktable"><tbody><tr id="external-Ganttchild_10" class="gname ggroupitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div><span id="external-Ganttgroup_10" class="gfoldercollapse">-</span>&nbsp;WCF Changes</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>9.1 Days</div></td><td class="gpccomplete"><div>25%</div></td><td class="gstartdate"><div>11/05/2017</div></td><td class="genddate"><div>20/05/2017</div></td></tr><tr id="external-Ganttchild_20" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to WCF from remoting</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>4.6 Days</div></td><td class="gpccomplete"><div>10%</div></td><td class="gstartdate"><div>11/05/2017</div></td><td class="genddate"><div>15/05/2017</div></td></tr><tr id="external-Ganttchild_30" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add Auditing</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>2.1 Days</div></td><td class="gpccomplete"><div>50%</div></td><td class="gstartdate"><div>18/05/2017</div></td><td class="genddate"><div>20/05/2017</div></td></tr><tr id="external-Ganttchild_50" class="gname ggroupitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div><span id="external-Ganttgroup_50" class="gfoldercollapse">-</span>&nbsp;Another Group</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>11.6 Days</div></td><td class="gpccomplete"><div>35%</div></td><td class="gstartdate"><div>14/05/2017</div></td><td class="genddate"><div>25/05/2017</div></td></tr><tr id="external-Ganttchild_60" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to GitHub</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>2.6 Days</div></td><td class="gpccomplete"><div>10%</div></td><td class="gstartdate"><div>14/05/2017</div></td><td class="genddate"><div>16/05/2017</div></td></tr><tr id="external-Ganttchild_70" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updating files</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>3.1 Days</div></td><td class="gpccomplete"><div>50%</div></td><td class="gstartdate"><div>18/05/2017</div></td><td class="genddate"><div>21/05/2017</div></td></tr><tr id="external-Ganttchild_80" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yet another task</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>3 Days</div></td><td class="gpccomplete"><div>30%</div></td><td class="gstartdate"><div>23/05/2017</div></td><td class="genddate"><div>25/05/2017</div></td></tr><tr id="external-Ganttchild_40" class="gname glineitem"><td class="gtasklist">&nbsp;</td><td class="gtaskname"><div>&nbsp;&nbsp;&nbsp;&nbsp;Yet another task</div></td><td class="gresource"><div><a href=""></a></div></td><td class="gduration"><div>2 Days</div></td><td class="gpccomplete"><div>30%</div></td><td class="gstartdate"><div>24/05/2017</div></td><td class="genddate"><div>25/05/2017</div></td></tr><tr><td class="gtasklist">&nbsp;</td><td class="gspanning gtaskname"><div class="gselector"></div></td><td class="gspanning gresource">&nbsp;</td><td class="gspanning gduration">&nbsp;</td><td class="gspanning gpccomplete">&nbsp;</td><td class="gspanning gstartdate">&nbsp;</td><td class="gspanning genddate">&nbsp;</td></tr></tbody></table><br><br></div><div id="external-Ganttgchartbody" class="gchartgrid gcontainercol"><table id="external-GanttchartTable" class="gcharttable" style="width: 400px;"><tbody><tr id="external-Ganttchildrow_10" class="ggroupitem ggroupday"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="external-Ganttbardiv_10" class="gtaskbarcontainer" style="width: 173px; left: 65px;"><div id="external-Gantttaskbar_10" class="ggroupblack" style="width: 173px;"><div id="external-Ganttcomplete_10" class="ggroupblackcomplete" style="width: 25%;"></div></div><div class="ggroupblackendpointleft"></div><div class="ggroupblackendpointright"></div><div class="ggroupcaption" style="width: 120px;">&nbsp;</div><div id="external-Gantttt10" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">WCF Changes</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">11 May 2017 09:00</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">20 May 2017 12:00</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">9.1 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">25%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">&nbsp;</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td></tr><tr id="external-Ganttchildrow_20" class="glineitem gitemday"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="external-Ganttbardiv_20" class="gtaskbarcontainer" style="width: 87px; left: 65px;"><div id="external-Gantttaskbar_20" class="gtaskblue" style="width: 87px;"><div id="external-Ganttcomplete_20" class="gtaskbluecomplete" style="width: 10%;"></div></div><div class="gcaption" style="width: 120px;">Paul</div><div id="external-Gantttt20" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Move to WCF from remoting</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">11 May 2017 09:00</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">15 May 2017 00:00</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">4.6 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">10%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Paul</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes">This text is only available in tool tips</span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td></tr><tr id="external-Ganttchildrow_30" class="glineitem gitemday"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="external-Ganttbardiv_30" class="gtaskbarcontainer" style="width: 39px; left: 198px;"><div id="external-Gantttaskbar_30" class="gtaskblue" style="width: 39px;"><div id="external-Ganttcomplete_30" class="gtaskbluecomplete" style="width: 50%;"></div></div><div class="gcaption" style="width: 120px;">Eduardo</div><div id="external-Gantttt30" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">add Auditing</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">18 May 2017 10:30</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">20 May 2017 12:00</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">2.1 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">50%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Eduardo</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td></tr><tr id="external-Ganttchildrow_50" class="ggroupitem ggroupday"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="external-Ganttbardiv_50" class="gtaskbarcontainer" style="width: 220px; left: 122px;"><div id="external-Gantttaskbar_50" class="ggroupblack" style="width: 220px;"><div id="external-Ganttcomplete_50" class="ggroupblackcomplete" style="width: 35%;"></div></div><div class="ggroupblackendpointleft"></div><div class="ggroupblackendpointright"></div><div class="ggroupcaption" style="width: 120px;">&nbsp;</div><div id="external-Gantttt50" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Another Group</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">14 May 2017 09:00</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">25 May 2017 00:00</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">11.6 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">35%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">&nbsp;</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td></tr><tr id="external-Ganttchildrow_60" class="glineitem gitemday"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="external-Ganttbardiv_60" class="gtaskbarcontainer" style="width: 49px; left: 122px;"><div id="external-Gantttaskbar_60" class="gtaskblue" style="width: 49px;"><div id="external-Ganttcomplete_60" class="gtaskbluecomplete" style="width: 10%;"></div></div><div class="gcaption" style="width: 120px;">Ricardo</div><div id="external-Gantttt60" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Move to GitHub</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">14 May 2017 09:00</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">16 May 2017 00:00</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">2.6 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">10%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Ricardo</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes">This text is only available in tool tips</span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td></tr><tr id="external-Ganttchildrow_70" class="glineitem gitemday"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="external-Ganttbardiv_70" class="gtaskbarcontainer" style="width: 58px; left: 198px;"><div id="external-Gantttaskbar_70" class="gtaskred" style="width: 58px;"><div id="external-Ganttcomplete_70" class="gtaskredcomplete" style="width: 50%;"></div></div><div class="gcaption" style="width: 120px;">Paul</div><div id="external-Gantttt70" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Updating files</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">18 May 2017 10:30</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">21 May 2017 12:00</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">3.1 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">50%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Paul</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td></tr><tr id="external-Ganttchildrow_80" class="glineitem gitemday"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="external-Ganttbardiv_80" class="gtaskbarcontainer" style="width: 56px; left: 285px;"><div id="external-Gantttaskbar_80" class="gtaskyellow" style="width: 56px;"><div id="external-Ganttcomplete_80" class="gtaskyellowcomplete" style="width: 30%;"></div></div><div class="gcaption" style="width: 120px;">Eduardo</div><div id="external-Gantttt80" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Yet another task</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">23 May 2017 00:00</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">25 May 2017 00:00</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">3 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">30%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Eduardo</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td></tr><tr id="external-Ganttchildrow_40" class="glineitem gitemday"><td class="gtaskcell"><div class="gtaskcelldiv">&nbsp;&nbsp;<div id="external-Ganttbardiv_40" class="gtaskbarcontainer" style="width: 37px; left: 304px;"><div id="external-Gantttaskbar_40" class="gtaskblue" style="width: 37px;"><div id="external-Ganttcomplete_40" class="gtaskbluecomplete" style="width: 30%;"></div></div><div class="gcaption" style="width: 120px;">Ricardo</div><div id="external-Gantttt40" style="display: none;"><div class="gTaskInfo"><span class="gTtTitle">Yet another task</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">24 May 2017 00:00</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">25 May 2017 00:00</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">2 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">30%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Ricardo</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></div></td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcell">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td><td class="gtaskcellwkend">&nbsp;&nbsp;</td></tr><tr><td class="gminorheading"><div style="width: 18px;">08</div></td><td class="gminorheading"><div style="width: 18px;">09</div></td><td class="gminorheading"><div style="width: 18px;">10</div></td><td class="gminorheading"><div style="width: 18px;">11</div></td><td class="gminorheading"><div style="width: 18px;">12</div></td><td class="gminorheadingwkend"><div style="width: 18px;">13</div></td><td class="gminorheadingwkend"><div style="width: 18px;">14</div></td><td class="gminorheading"><div style="width: 18px;">15</div></td><td class="gminorheading"><div style="width: 18px;">16</div></td><td class="gminorheading"><div style="width: 18px;">17</div></td><td class="gminorheading"><div style="width: 18px;">18</div></td><td class="gminorheading"><div style="width: 18px;">19</div></td><td class="gminorheadingwkend"><div style="width: 18px;">20</div></td><td class="gminorheadingwkend"><div style="width: 18px;">21</div></td><td class="gminorheading"><div style="width: 18px;">22</div></td><td class="gminorheading"><div style="width: 18px;">23</div></td><td class="gminorheading"><div style="width: 18px;">24</div></td><td class="gminorheading"><div style="width: 18px;">25</div></td><td class="gminorheading"><div style="width: 18px;">26</div></td><td class="gminorheadingwkend"><div style="width: 18px;">27</div></td><td class="gminorheadingwkend"><div style="width: 18px;">28</div></td></tr></tbody></table><div class="rhscrpad" style="left: 401px;"></div><div id="external-GanttLines" class="glinediv" style="visibility: hidden;"><div id="external-Ganttline1" style="position: absolute; overflow: hidden; z-index: 0; left: 153px; top: 28px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline2" style="position: absolute; overflow: hidden; z-index: 0; left: 157px; top: 28px; width: 1px; height: 20px; visibility: visible;" class="glinev gDepFS"></div><div id="external-Ganttline3" style="position: absolute; overflow: hidden; z-index: 0; left: 157px; top: 47px; width: 41px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline4" style="position: absolute; overflow: hidden; z-index: 0; left: 195px; top: 44px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div><div id="external-Ganttline5" style="position: absolute; overflow: hidden; z-index: 0; left: 172px; top: 85px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline6" style="position: absolute; overflow: hidden; z-index: 0; left: 176px; top: 85px; width: 1px; height: 20px; visibility: visible;" class="glinev gDepFS"></div><div id="external-Ganttline7" style="position: absolute; overflow: hidden; z-index: 0; left: 176px; top: 104px; width: 22px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline8" style="position: absolute; overflow: hidden; z-index: 0; left: 195px; top: 101px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div><div id="external-Ganttline9" style="position: absolute; overflow: hidden; z-index: 0; left: 172px; top: 85px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline10" style="position: absolute; overflow: hidden; z-index: 0; left: 176px; top: 85px; width: 1px; height: 39px; visibility: visible;" class="glinev gDepFS"></div><div id="external-Ganttline11" style="position: absolute; overflow: hidden; z-index: 0; left: 176px; top: 123px; width: 109px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline12" style="position: absolute; overflow: hidden; z-index: 0; left: 282px; top: 120px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div><div id="external-Ganttline13" style="position: absolute; overflow: hidden; z-index: 0; left: 257px; top: 104px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline14" style="position: absolute; overflow: hidden; z-index: 0; left: 261px; top: 104px; width: 1px; height: 20px; visibility: visible;" class="glinev gDepFS"></div><div id="external-Ganttline15" style="position: absolute; overflow: hidden; z-index: 0; left: 261px; top: 123px; width: 24px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline16" style="position: absolute; overflow: hidden; z-index: 0; left: 282px; top: 120px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div><div id="external-Ganttline17" style="position: absolute; overflow: hidden; z-index: 0; left: 153px; top: 28px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline18" style="position: absolute; overflow: hidden; z-index: 0; left: 157px; top: 28px; width: 1px; height: 115px; visibility: visible;" class="glinev gDepFS"></div><div id="external-Ganttline19" style="position: absolute; overflow: hidden; z-index: 0; left: 157px; top: 142px; width: 147px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline20" style="position: absolute; overflow: hidden; z-index: 0; left: 301px; top: 139px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div><div id="external-Ganttline21" style="position: absolute; overflow: hidden; z-index: 0; left: 238px; top: 47px; width: 5px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline22" style="position: absolute; overflow: hidden; z-index: 0; left: 242px; top: 47px; width: 1px; height: 96px; visibility: visible;" class="glinev gDepFS"></div><div id="external-Ganttline23" style="position: absolute; overflow: hidden; z-index: 0; left: 242px; top: 142px; width: 62px; height: 1px; visibility: visible;" class="glineh gDepFS"></div><div id="external-Ganttline24" style="position: absolute; overflow: hidden; z-index: 0; left: 301px; top: 139px; width: 0px; height: 0px; visibility: visible;" class="glineh gDepFSArw"></div></div></div><div class="ggridfooter"></div></div>
+        </div>
+      </div>
+    <!-- Features -->
+      <div class="container-fluid section" id="features">
+        <h1>Features</h1>
+        <p>jsGanttImproved is a fully featured gantt chart component 
+built entirely in Javascript, CSS and AJAX. It is lightweight and there 
+is no need of external libraries or additional images.</p>
+        <div class="row">
+          <div class="col-lg">
+            <h2>Basic Features</h2>
+            <ul>
+              <li>Tasks &amp; Collapsible Task Groups</li>
+              <li>Multiple Dependencies</li>
+              <li>Task Completion</li>
+              <li>Task Style</li>
+              <li>Milestones</li>
+              <li>Resources</li>
+            </ul>
+          </div>
+          <div class="col-lg">
+            <h2>Advanced Features</h2>
+            <ul>
+              <li>Dynamic Loading of Tasks</li>
+              <li>Dynamic change of format: Hour, Day, Week, Month, Quarter</li>
+              <li>
+                Load Gantt from:
+                <ul>
+                  <li>External XML files (including experimental support for Microsoft Project XML files)</li>
+                  <li>JavaScript strings</li>
+                </ul>
+              </li>
+              <li>Export Gantt as XML string</li>
+              <li>Support for internationalization</li>
+            </ul>
+          </div>
+        </div>
+        <h2>Current Known Issues:</h2>
+        <ul>
+          <li>If the browser is viewing the page at anything other than 100% zoom then bars may not be sized or positioned correctly.</li>
+        </ul>
+        <h2>Changelog:</h2>
+        <p>Check the full list of changes on <a href="https://github.com/jsGanttImproved/jsgantt-improved/releases">GitHub releases page</a>.</p>
+        <h3>v1.7.5.4:</h3>
+        <ul>
+          <li>Left part of the chart is now created first on JavaScript and establishes the left floating reference</li>
+          <li>Minimum width updated to 632px so that the left part of 
+the chart has a fixed width of 532px and the right part fills out the 
+rest with a minimum of 100px</li>
+        </ul>
+        <h3>v1.7.5.3:</h3>
+        <ul>
+          <li>Fixed group completion percentage that now is a weighted average</li>
+          <li>Start and end dates specified on standard group tasks will
+ now be respected if they fall outside of the calculated group date 
+range</li>
+          <li>Fixed problem that would occur if Tool Tips were disabled</li>
+          <li>Moved example dates forward so the current date marker is visible</li>
+        </ul>
+        <h3>v1.7.5:</h3>
+        <ul>
+          <li>Project Migrated to GitHub</li>
+          <li>Instantiating a new JSGantt.TaskItem will now also accept Date objects for start and end dates</li>
+          <li>Fixed old Internet Explorer compatibilty broken by v1.7</li>
+          <li>Fixed bug in Iso week date format</li>
+          <li>Changed to solid arrows on dependency lines to be more printer friendly</li>
+          <li>Code refactoring and clean up</li>
+        </ul>
+        <h3>v1.7:</h3>
+        <ul>
+          <li>
+            Fixed nasty long-standing bug where the first Gantt chart created must be stored in a javascript variable named "g"
+            <ul>
+              <li>NOTE: This required a change in the method to instatiate a JSGantt.TaskItem object to pass the related chart.</li>
+              <li>A temporary fix is included that still assumes the use
+ of "g" for the chart if the chart object is not passed, this will be 
+removed in v1.8</li>
+            </ul>
+          </li>
+          <li>Altered XML export functionality so that dates are output in the specified input format for the chart</li>
+          <li>Added method to read XML directly from an input string</li>
+          <li>Prevented creation of a task with a duplicate "unique" ID</li>
+          <li>Fixed bug where attempting to remove the first task defined would prevent the chart from redrawing</li>
+          <li>Some general code clean up</li>
+        </ul>
+      </div>
+    <!-- Usage -->
+      <div class="container-fluid section" id="usage">
+        <h1>Usage</h1>
+        <p>Following the steps below you will be able to get create a basic Gantt Chart. If you notice any bugs, please post them to <a href="https://github.com/jsGanttImproved/jsgantt-improved/issues">GitHub&nbsp;issues</a>.</p>
+        <ol>
+          <li>
+            Include JSGantt CSS and Javascript
+            <pre class="prettyprint lang-html code-block prettyprinted" style=""><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"jsgantt.css"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">language</span><span class="pun">=</span><span class="atv">"javascript"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"jsgantt.js"</span><span class="tag">&gt;&lt;/script&gt;</span></code></pre>
+          </li>
+          <li>
+            Create a div element to hold the gantt chart
+            <pre class="prettyprint lang-html prettyprinted" style=""><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="kwd">position</span><span class="pun">:</span><span class="pln">relative</span><span class="atv">"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"gantt"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"GanttChartDIV"</span><span class="tag">&gt;&lt;/div&gt;</span></code></pre>
+          </li>
+          <li>
+            Start a &lt;script&gt; block
+            <pre class="prettyprint lang-html prettyprinted" style=""><code><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span></code></pre>
+          </li>
+          <li>
+            Instantiate JSGantt using GanttChart()
+            <pre class="prettyprint lang-js prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> g </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">GanttChart</span><span class="pun">(</span><span class="pln">document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">'GanttChartDIV'</span><span class="pun">),</span><span class="pln"> </span><span class="str">'day'</span><span class="pun">);</span></code></pre>
+            <p>Method definition:
+              <strong>GanttChart(<em>pDiv, pFormat</em>)</strong>
+            </p>
+            <p></p><table>
+              <tbody><tr>
+                <th>pDiv:</th>
+                <td>(required) this is a DIV object created in HTML</td>
+              </tr>
+              <tr>
+                <th>pFormat:</th>
+                <td>(required) - used to indicate whether chart should be drawn in "hour", "day", "week", "month", or "quarter" format</td>
+              </tr>
+            </tbody></table><p></p>
+          </li>
+          <li>
+            <p>Customize the look and feel using configuration methods (see <a href="#options">Configuration Options</a>)</p>
+          </li>
+          <li>
+            Add Tasks
+            <ul>
+              <li>
+                using AddTaskItem()
+                <pre class="prettyprint lang-js prettyprinted" style=""><code><span class="pln">g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Define Chart API'</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="pln">          </span><span class="str">''</span><span class="pun">,</span><span class="pln">          </span><span class="str">'ggroupblack'</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="lit">0</span><span class="pun">,</span><span class="lit">1</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="str">'Some Notes text'</span><span class="pun">,</span><span class="pln">g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">11</span><span class="pun">,</span><span class="str">'Chart Object'</span><span class="pun">,</span><span class="pln">    </span><span class="str">'2016-02-20'</span><span class="pun">,</span><span class="str">'2016-02-20'</span><span class="pun">,</span><span class="str">'gmilestone'</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Shlomy'</span><span class="pun">,</span><span class="lit">100</span><span class="pun">,</span><span class="lit">0</span><span class="pun">,</span><span class="lit">1</span><span class="pun">,</span><span class="lit">1</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="pln">g</span><span class="pun">));</span><span class="pln">
+                </span></code></pre>
+                <p>Method definition:
+                  <strong>TaskItem(<em>pID, pName, pStart, pEnd, pColor, pLink, pMile, pRes, pComp, pGroup, pParent, pOpen, pDepend, pCaption, pNotes, pGantt</em>)</strong>
+                </p>
+                <table>
+                  <tbody><tr>
+                    <th>pID:</th>
+                    <td>(required) a unique numeric ID used to identify each row</td>
+                  </tr>
+                  <tr>
+                    <th>pName:</th>
+                    <td>(required) the task Label</td>
+                  </tr>
+                  <tr>
+                    <th>pStart:</th>
+                    <td>(required) the task start date, can enter empty 
+date ('') for groups. You can also enter specific time (2016-02-20 
+12:00) for additional precision.</td>
+                  </tr>
+                  <tr>
+                    <th>pEnd:</th>
+                    <td>(required) the task end date, can enter empty date ('') for groups</td>
+                  </tr>
+                  <tr>
+                    <th>pClass:</th>
+                    <td>(required) the css class for this task</td>
+                  </tr>
+                  <tr>
+                    <th>pLink:</th>
+                    <td>(optional) any http link to be displayed in tool tip as the "More information" link.</td>
+                  </tr>
+                  <tr>
+                    <th>pMile:</th>
+                    <td>(optional) indicates whether this is a milestone task - Numeric; 1 = milestone, 0 = not milestone</td>
+                  </tr>
+                  <tr>
+                    <th>pRes:</th>
+                    <td>(optional) resource name</td>
+                  </tr>
+                  <tr>
+                    <th>pComp:</th>
+                    <td>(required) completion percent, numeric</td>
+                  </tr>
+                  <tr>
+                    <th>pGroup:</th>
+                    <td>(optional) indicates whether this is a group 
+task (parent) - Numeric; 0 = normal task, 1 = standard group task, 2 = 
+combined group task<a href="#combinedtasks" class="footnote">*</a></td>
+                  </tr>
+                  <tr>
+                    <th>pParent:</th>
+                    <td>(required) identifies a parent pID, this causes 
+this task to be a child of identified task. Numeric, top level tasks 
+should have pParent set to 0</td>
+                  </tr>
+                  <tr>
+                    <th>pOpen:</th>
+                    <td>(required) indicates whether a standard group 
+task is open when chart is first drawn. Value must be set for all items 
+but is only used by standard group tasks.  Numeric, 1 = open, 0 = closed</td>
+                  </tr>
+                  <tr>
+                    <th>pDepend:</th>
+                    <td>
+                      (optional) comma separated list of id's this task 
+is dependent on. A line will be drawn from each listed task to this item<br>Each id can optionally be followed by a dependency type suffix. Valid values are:
+                      <blockquote>'FS' - Finish to Start (default if suffix is omitted)<br>'SF' - Start to Finish<br>'SS' - Start to Start<br>'FF' - Finish to Finish</blockquote>
+                      If present the suffix must be added directly to the id e.g. '123SS'
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>pCaption:</th>
+                    <td>(optional) caption that will be added after task bar if CaptionType set to "Caption"</td>
+                  </tr>
+                  <tr>
+                    <th>pNotes:</th>
+                    <td>(optional) Detailed task information that will be displayed in tool tip for this task</td>
+                  </tr>
+                  <tr>
+                    <th>pGantt:</th>
+                    <td>(required) javascript JSGantt.GanttChart object from which to take settings.  Defaults to "g" for backwards compatibility</td>
+                  </tr>
+                </tbody></table>
+                <p id="combinedtasks"><span style="color: red;">*</span>
+ Combined group tasks show all sub-tasks on one row. The information 
+displayed in the task list and row caption are taken from the parent 
+task.  Tool tips are generated individually for each sub-task from its 
+own information.  Milestones are not valid as sub-tasks of a combined 
+group task and will not be displayed. No bounds checking of start and 
+end dates of sub-tasks is performed therefore it is possible for these 
+task bars to overlap. Dependencies can be set to and from sub-tasks 
+only.</p>
+              </li>
+              <li>
+                using parseXML() with an external XML file
+                <pre class="prettyprint lang-js prettyprinted" style=""><code><span class="typ">JSGantt</span><span class="pun">.</span><span class="pln">parseXML</span><span class="pun">(</span><span class="str">"project.xml"</span><span class="pun">,</span><span class="pln">g</span><span class="pun">);</span></code></pre>
+                <p>Method definition:
+                  <strong>JSGantt.parseXML(<em>pFile, pGanttObj</em>)</strong>
+                </p>
+                <table>
+                  <tbody><tr>
+                    <th>pFile:</th>
+                    <td>(required) this is the filename of the XML</td>
+                  </tr>
+                  <tr>
+                    <th>pGanttObj:</th>
+                    <td>(required) a GanttChart object returned by a call to JSGantt.GanttChart()</td>
+                  </tr>
+                </tbody></table>
+                <p>The structure of the native XML file:</p>
+                <pre class="prettyprint lang-ml prettyprinted" style=""><code><span class="tag">&lt;project&gt;</span><span class="pln">
+  </span><span class="tag">&lt;task&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pID&gt;</span><span class="pln">25</span><span class="tag">&lt;/pID&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pName&gt;</span><span class="pln">WCF Changes</span><span class="tag">&lt;/pName&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pStart&gt;&lt;/pStart&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pEnd&gt;&lt;/pEnd&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pClass&gt;</span><span class="pln">gtaskred</span><span class="tag">&lt;/pClass&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pLink&gt;&lt;/pLink&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pMile&gt;</span><span class="pln">0</span><span class="tag">&lt;/pMile&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pRes&gt;&lt;/pRes&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pComp&gt;</span><span class="pln">0</span><span class="tag">&lt;/pComp&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pGroup&gt;</span><span class="pln">1</span><span class="tag">&lt;/pGroup&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pParent&gt;</span><span class="pln">2</span><span class="tag">&lt;/pParent&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pOpen&gt;</span><span class="pln">1</span><span class="tag">&lt;/pOpen&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pDepend&gt;</span><span class="pln">2,24</span><span class="tag">&lt;/pDepend&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pCaption&gt;</span><span class="pln">A caption</span><span class="tag">&lt;/pCaption&gt;</span><span class="pln">
+    </span><span class="tag">&lt;pNotes&gt;</span><span class="pln">Text - can include limited HTML</span><span class="tag">&lt;/pNotes&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/task&gt;</span><span class="pln">
+</span><span class="tag">&lt;/project&gt;</span></code></pre>
+                <p>Field definitions are as described for the parameters
+ to TaskItem above. The pClass element is optional in XML files and will
+ default to "ggroupblack" for group tasks, "gtaskblue" for normal tasks 
+and "gmilestone" for milestones. The pGantt element is not required for 
+XML import.</p>
+                <p>JSGannt Improved will also test the provided XML file
+ to see if it appears to be in Microsoft Project XML format. If so an 
+attempt will be made to load up the project. This feature is 
+experimental, the import is best effort and not guaranteed. Once loaded 
+the project as interpreted by JSGantt Improved can be extracted using 
+the <a href="#xmlExport">XML Export methods</a> provided.</p>
+              </li>
+              <li>
+                using parseXMLString() with XML held in a javascript string object
+                <pre class="prettyprint lang-js prettyprinted" style=""><code><span class="typ">JSGantt</span><span class="pun">.</span><span class="pln">parseXMLString</span><span class="pun">(</span><span class="str">"&lt;project&gt;&lt;task&gt;...&lt;/task&gt;&lt;/project&gt;"</span><span class="pun">,</span><span class="pln">g</span><span class="pun">);</span></code></pre>
+                <p>Method definition:
+                  <strong>JSGantt.parseXMLString(<em>pStr, pGanttObj</em>)</strong>
+                </p>
+                <table>
+                  <tbody><tr>
+                    <th>pStr:</th>
+                    <td>(required) this is a javascript String containing XML</td>
+                  </tr>
+                  <tr>
+                    <th>pGanttObj:</th>
+                    <td>(required) a GanttChart object returned by a call to JSGantt.GanttChart()</td>
+                  </tr>
+                </tbody></table>
+                <p>The XML provided will be parsed in exactly the same 
+way as the contents of an external XML file and hence must match the 
+format as described for JSGantt.parseXML() above</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Call Draw()</p>
+            <pre class="prettyprint lang-js prettyprinted" style=""><code><span class="pln">g</span><span class="pun">.</span><span class="typ">Draw</span><span class="pun">();</span></code></pre>
+          </li>
+          <li>
+            <p>Close the &lt;script&gt; block</p>
+            <pre class="prettyprint lang-html prettyprinted" style=""><code><span class="tag">&lt;/script&gt;</span></code></pre>
+          </li>
+        </ol>
+        <p>It is possible to add items to the chart in realtime via javascript using either direct method calls or additional XML files.
+          It is also possible to delete tasks using RemoveTaskItem() method.
+        </p>
+        <pre class="prettyprint lang-js prettyprinted" style=""><code><span class="pln">g</span><span class="pun">.</span><span class="typ">RemoveTaskItem</span><span class="pun">(</span><span class="lit">11</span><span class="pun">);</span></code></pre>
+        <p>Method definition:
+          <strong>RemoveTaskItem(<em>pID</em>)</strong>
+        </p>
+        <table>
+          <tbody><tr>
+            <th>pID:</th>
+            <td>(required) the unique numeric ID of the item to be removed</td>
+          </tr>
+        </tbody></table>
+        <p>If the task removed is a group item, all child tasks will also be removed. </p>
+        <p>After adding or removing tasks a call to "g.Draw()" must be made to redraw the chart.</p>
+        <h2 id="options">Configuration Options</h2>
+        <h3>Switches</h3>
+        <p>Many of the features of jsGanttImproved can be customised 
+through the use of setter methods available on the GanttChart object 
+returned by a call to JSGantt.GanttChart()</p>
+        <p>The following options take a single numeric parameter; a value of 1 will enable the describe functionality, 0 will disable it</p>
+        <table class="configlist">
+          <tbody><tr>
+            <th id="setUseToolTip">setUseToolTip():</th>
+            <td>Controls the display of tool tip boxes, defaults to 1 (enabled)</td>
+          </tr>
+          <tr>
+            <th id="setUseFade">setUseFade():</th>
+            <td>Controls use of the fade effect when showing/hiding tool tips, defaults to 1 (enabled)</td>
+          </tr>
+          <tr>
+            <th id="setUseMove">setUseMove():</th>
+            <td>Controls use of the sliding effect when changing between different task tool tips, defaults to 1 (enabled)</td>
+          </tr>
+          <tr>
+            <th id="setUseRowHlt">setUseRowHlt():</th>
+            <td>Controls the use of row mouseover highlighting, defaults to 1 (enabled)</td>
+          </tr>
+          <tr>
+            <th id="setUseSort">setUseSort():</th>
+            <td>Controls whether the task list is sorted into parent 
+task / start time order or is simply displayed in the order created, 
+defaults to 1 (sort enabled)</td>
+          </tr>
+          <tr>
+            <th id="setShowRes">setShowRes():</th>
+            <td>Controls whether the Resource column is displayed in the task list, defaults to 1 (show column)</td>
+          </tr>
+          <tr>
+            <th id="setShowDur">setShowDur():</th>
+            <td>Controls whether the Task Duration column is displayed in the task list, defaults to 1 (show column)</td>
+          </tr>
+          <tr>
+            <th id="setShowComp">setShowComp():</th>
+            <td>Controls whether the Percentage Complete column is displayed in the task list, defaults to 1 (show column)</td>
+          </tr>
+          <tr>
+            <th id="setShowStartDate">setShowStartDate():</th>
+            <td>Controls whether the Task Start Date column is displayed in the task list, defaults to 1 (show column)</td>
+          </tr>
+          <tr>
+            <th id="setShowEndDate">setShowEndDate():</th>
+            <td>Controls whether the Task End Date column is displayed in the task list, defaults to 1 (show column)</td>
+          </tr>
+          <tr>
+            <th id="setShowTaskInfoRes">setShowTaskInfoRes():</th>
+            <td>Controls whether the Resource information is displayed in the task tool tip, defaults to 1 (show information)</td>
+          </tr>
+          <tr>
+            <th id="setShowTaskInfoDur">setShowTaskInfoDur():</th>
+            <td>Controls whether the Task Duration information is displayed in the task tool tip, defaults to 1 (show information)</td>
+          </tr>
+          <tr>
+            <th id="setShowTaskInfoComp">setShowTaskInfoComp():</th>
+            <td>Controls whether the Percentage Complete information is displayed in the task tool tip, defaults to 1 (show information)</td>
+          </tr>
+          <tr>
+            <th id="setShowTaskInfoStartDate">setShowTaskInfoStartDate():</th>
+            <td>Controls whether the Task Start Date information is displayed in the task tool tip, defaults to 1 (show information)</td>
+          </tr>
+          <tr>
+            <th id="setShowTaskInfoEndDate">setShowTaskInfoEndDate():</th>
+            <td>Controls whether the Task End Date information is displayed in the task tool tip, defaults to 1 (show information)</td>
+          </tr>
+          <tr>
+            <th id="setShowTaskInfoLink">setShowTaskInfoLink():</th>
+            <td>Controls whether the More Information link is displayed in the task tool tip, defaults to 0 (do NOT show link)</td>
+          </tr>
+          <tr>
+            <th id="setShowTaskInfoNotes">setShowTaskInfoNotes():</th>
+            <td>Controls whether the Additional Notes data is displayed in the task tool tip, defaults to 1 (show notes)</td>
+          </tr>
+          <tr>
+            <th id="setShowEndWeekDate">setShowEndWeekDate():</th>
+            <td>Controls whether the major heading in "Day" view displays the week end-date in the appropriate format (see <a href="#setDayMajorDateDisplayFormat">below</a>), defaults to 1 (show date)</td>
+          </tr>
+          <tr>
+            <th id="setShowDeps">setShowDeps():</th>
+            <td>Controls display of dependancy lines, defaults to 1 (show dependencies)</td>
+          </tr>
+        </tbody></table>
+        <h3>Key Values</h3>
+        <p>The following options enable functionality using a set of specific key values</p>
+        <table class="configlist">
+          <tbody><tr>
+            <th id="setShowSelector">setShowSelector():</th>
+            <td>Controls where the format selector is displayed, accepts multiple parameters.<br>Valid parameter values are "Top", "Bottom".<br>Defaults to "Top".</td>
+          </tr>
+          <tr>
+            <th id="setFormatArr">setFormatArr():</th>
+            <td>Controls which format options are shown in the format selector, accepts multiple parameters.<br>Valid parameter values are "Hour", "Day", "Week", "Month", "Quarter".<br>Defaults to all valid values.</td>
+          </tr>
+          <tr>
+            <th id="setCaptionType">setCaptionType():</th>
+            <td>Controls which task field to use as a caption on the Gantt Chart task bar, accepts a single parameter.<br>Valid parameter values are "None", "Caption", "Resource", "Duration", "Complete".<br>Defaults to "None"</td>
+          </tr>
+          <tr>
+            <th id="setDateInputFormat">setDateInputFormat():</th>
+            <td>Defines the input format used for dates in task creation, accepts a single parameter.<br>Valid parameter values are "yyyy-mm-dd", "dd/mm/yyyy", "mm/dd/yyyy".<br>Defaults to "yyyy-mm-dd"</td>
+          </tr>
+          <tr>
+            <th id="setScrollTo">setScrollTo():</th>
+            <td>Sets the date the Gantt Chart will be scrolled to, 
+specified in the date input format set by setDateInputFormat() above. 
+Also accepts the special value "today"<br>Defaults to minimum display date</td>
+          </tr>
+          <tr>
+            <th id="setUseSingleCell">setUseSingleCell():</th>
+            <td>Sets the threshold total number of cells at which the 
+task list will use a single table cell for each row rather than one cell
+ per period.  Useful to improve performance on large charts.  A value of
+ 0 disables this functionality (always use multiple cells), defaults to 
+25000</td>
+          </tr>
+          <tr>
+            <th id="setLang">setLang():</th>
+            <td>Sets translation to use when drawing the chart.  
+Defaults to "en" as this is the only language provided in the base 
+installation (see <a href="#optionsLanguage">internationalization</a> below for details on how to add more translations.)</td>
+          </tr>
+        </tbody></table>
+        <h3>Layout</h3>
+        <p>Most of the look and feel of the Gantt Chart can be 
+controlled using CSS however, as the length of a task bar is determined 
+by column width, the following methods take a single numeric parameter 
+that defines the appropriate column width in pixels.</p>
+        <p>Note that the task bar sizing code assumes the use of collapsed table borders 1px wide.</p>
+        <table class="configlist">
+          <tbody><tr>
+            <th id="setHourColWidth">setHourColWidth():</th>
+            <td>Width of Gantt Chart columns in pixels when drawn in "Hour" format. Defaults to 18.</td>
+          </tr>
+          <tr>
+            <th id="setDayColWidth">setDayColWidth():</th>
+            <td>Width of Gantt Chart columns in pixels when drawn in "Day" format. Defaults to 18.</td>
+          </tr>
+          <tr>
+            <th id="setWeekColWidth">setWeekColWidth():</th>
+            <td>Width of Gantt Chart columns in pixels when drawn in "Week" format. Defaults to 36.</td>
+          </tr>
+          <tr>
+            <th id="setMonthColWidth">setMonthColWidth():</th>
+            <td>Width of Gantt Chart columns in pixels when drawn in "Month" format. Defaults to 36.</td>
+          </tr>
+          <tr>
+            <th id="setQuarterColWidth">setQuarterColWidth():</th>
+            <td>Width of Gantt Chart columns in pixels when drawn in 
+"Quarter" format, although not mandatory it is recommended that this be 
+set to a value divisible by 3. Defaults to 18.</td>
+          </tr>
+          <tr>
+            <th id="setRowHeight">setRowHeight():</th>
+            <td>Height of Gantt Chart rows in pixels. Used to route dependency lines near end points. Defaults to 20.</td>
+          </tr>
+          <tr>
+            <th id="setMinGpLen">setMinGpLen():</th>
+            <td>Group tasks have their task bars embellished with end 
+points, this value specifies the width of one of these end points in 
+pixels.  A short task bar's length will be rounded up to display either a
+ single or both endpoints correctly. Defaults to 8.</td>
+          </tr>
+        </tbody></table>
+        <h3>Display Date Formats</h3>
+        <p>Date display formats can be individually controlled. The 
+methods used to set these display formats each take a single format 
+string parameter.  The format string can be made up of the following 
+components (case sensitive)</p>
+        <blockquote>
+          <table>
+            <tbody><tr>
+              <th>h:</th>
+              <td>Hour (1-12)</td>
+            </tr>
+            <tr>
+              <th>hh:</th>
+              <td>Hour (01-12)</td>
+            </tr>
+            <tr>
+              <th>pm:</th>
+              <td>am/pm indicator</td>
+            </tr>
+            <tr>
+              <th>PM:</th>
+              <td>AM/PM indicator</td>
+            </tr>
+            <tr>
+              <th>H:</th>
+              <td>Hour (0-23)</td>
+            </tr>
+            <tr>
+              <th>HH:</th>
+              <td>Hour (01-23)</td>
+            </tr>
+            <tr>
+              <th>mi:</th>
+              <td>Minutes (1-59)</td>
+            </tr>
+            <tr>
+              <th>MI:</th>
+              <td>Minutes (01-59)</td>
+            </tr>
+            <tr>
+              <th>d:</th>
+              <td>Day (1-31)</td>
+            </tr>
+            <tr>
+              <th>dd:</th>
+              <td>Day (01-31)</td>
+            </tr>
+            <tr>
+              <th>day:</th>
+              <td>Abbreviated day of week</td>
+            </tr>
+            <tr>
+              <th>DAY:</th>
+              <td>Day of week</td>
+            </tr>
+            <tr>
+              <th>m:</th>
+              <td>Month (1-12)</td>
+            </tr>
+            <tr>
+              <th>mm:</th>
+              <td>Month (01-12)</td>
+            </tr>
+            <tr>
+              <th>mon:</th>
+              <td>Abbreviated month text</td>
+            </tr>
+            <tr>
+              <th>month:</th>
+              <td>Full month text</td>
+            </tr>
+            <tr>
+              <th>yy:</th>
+              <td>Year, excluding century</td>
+            </tr>
+            <tr>
+              <th>yyyy:</th>
+              <td>Year</td>
+            </tr>
+            <tr>
+              <th>q:</th>
+              <td>Quarter (1-4)</td>
+            </tr>
+            <tr>
+              <th>qq:</th>
+              <td>Quarter (Q1-Q4)</td>
+            </tr>
+            <tr>
+              <th>w:</th>
+              <td>ISO Week number (1-53)</td>
+            </tr>
+            <tr>
+              <th>ww:</th>
+              <td>ISO Week number (01-53)</td>
+            </tr>
+            <tr>
+              <th>week:</th>
+              <td>Full ISO Week date format</td>
+            </tr>
+          </tbody></table>
+          <p>separated by one of the following characters: <strong>"/\-.,'&lt;space&gt;:</strong></p>
+          <p>Any text between separators that does not match one of the 
+components above will be checked using a case insensitive match for a 
+valid internationalized string (see <a href="#optionsLanguage">internationalization</a> below).  If the value is still not found the text will be output unchanged.</p>
+        </blockquote>
+        <p>The available date display methods are</p>
+        <table class="dateconfiglist">
+          <tbody><tr>
+            <th id="setDateTaskTableDisplayFormat">setDateTaskTableDisplayFormat():</th>
+            <td>Date format used for start and end dates in the main task list. Defaults to 'dd/mm/yyyy'.</td>
+          </tr>
+          <tr>
+            <th id="setDateTaskDisplayFormat">setDateTaskDisplayFormat():</th>
+            <td>Date format used for start and end dates in task tool tips. Defaults to 'dd month yyyy'.</td>
+          </tr>
+          <tr>
+            <th id="setHourMajorDateDisplayFormat">setHourMajorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart major date headings displayed in "Hour" format. Defaults to 'day dd month yyyy'.</td>
+          </tr>
+          <tr>
+            <th id="setDayMajorDateDisplayFormat">setDayMajorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart major date headings displayed in "Day" format. Defaults to 'dd/mm/yyyy'.</td>
+          </tr>
+          <tr>
+            <th id="setWeekMajorDateDisplayFormat">setWeekMajorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart major date headings displayed in "Week" format. Defaults to 'yyyy'.</td>
+          </tr>
+          <tr>
+            <th id="setMonthMajorDateDisplayFormat">setMonthMajorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart major date headings displayed in "Month" format. Defaults to 'yyyy'.</td>
+          </tr>
+          <tr>
+            <th id="setQuarterMajorDateDisplayFormat">setQuarterMajorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart major date headings displayed in "Year" format. Defaults to 'yyyy'.</td>
+          </tr>
+          <tr>
+            <th id="setHourMinorDateDisplayFormat">setHourMinorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart minor date headings displayed in "Hour" format. Defaults to 'HH'.</td>
+          </tr>
+          <tr>
+            <th id="setDayMinorDateDisplayFormat">setDayMinorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart minor date headings displayed in "Day" format. Defaults to 'dd'.</td>
+          </tr>
+          <tr>
+            <th id="setWeekMinjorDateDisplayFormat">setWeekMinjorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart minor date headings displayed in "Week" format. Defaults to 'dd/mm'.</td>
+          </tr>
+          <tr>
+            <th id="setMonthMinorDateDisplayFormat">setMonthMinorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart minor date headings displayed in "Month" format. Defaults to 'mon'.</td>
+          </tr>
+          <tr>
+            <th id="setQuarterMinorDateDisplayFormat">setQuarterMinorDateDisplayFormat():</th>
+            <td>Date format used for Gantt Chart minor date headings displayed in "Year" format. Defaults to 'qq'.</td>
+          </tr>
+        </tbody></table>
+        <h3 id="optionsLanguage">Internationalization</h3>
+        <p>jsGanttImproved only provides English text however all hard 
+coded strings can be replaced by calling the addLang() method available 
+on the GanttChart object returned by a call to JSGantt.GanttChart()</p>
+        <p>The addLang() method takes two parameters.  The first is a 
+string identifier for the language, the second is a javascript object 
+containing all the replacement text pairs, the default English settings 
+are:</p>
+        <blockquote>
+          <table class="multipleColumns">
+            <tbody>
+              <tr>
+                <td class="lang">
+                  <table>
+                    <tbody><tr>
+                      <th>january:</th>
+                      <td>January</td>
+                    </tr>
+                    <tr>
+                      <th>february:</th>
+                      <td>February</td>
+                    </tr>
+                    <tr>
+                      <th>march:</th>
+                      <td>March</td>
+                    </tr>
+                    <tr>
+                      <th>april:</th>
+                      <td>April</td>
+                    </tr>
+                    <tr>
+                      <th>maylong:</th>
+                      <td>May</td>
+                    </tr>
+                    <tr>
+                      <th>june:</th>
+                      <td>June</td>
+                    </tr>
+                    <tr>
+                      <th>july:</th>
+                      <td>July</td>
+                    </tr>
+                    <tr>
+                      <th>august:</th>
+                      <td>August</td>
+                    </tr>
+                    <tr>
+                      <th>september:</th>
+                      <td>September</td>
+                    </tr>
+                    <tr>
+                      <th>october:</th>
+                      <td>October</td>
+                    </tr>
+                    <tr>
+                      <th>november:</th>
+                      <td>November</td>
+                    </tr>
+                    <tr>
+                      <th>december:</th>
+                      <td>December</td>
+                    </tr>
+                    <tr>
+                      <th>jan:</th>
+                      <td>Jan</td>
+                    </tr>
+                    <tr>
+                      <th>feb:</th>
+                      <td>Feb</td>
+                    </tr>
+                    <tr>
+                      <th>mar:</th>
+                      <td>Mar</td>
+                    </tr>
+                    <tr>
+                      <th>apr:</th>
+                      <td>Apr</td>
+                    </tr>
+                    <tr>
+                      <th>may:</th>
+                      <td>May</td>
+                    </tr>
+                    <tr>
+                      <th>jun:</th>
+                      <td>Jun</td>
+                    </tr>
+                    <tr>
+                      <th>jul:</th>
+                      <td>Jul</td>
+                    </tr>
+                    <tr>
+                      <th>aug:</th>
+                      <td>Aug</td>
+                    </tr>
+                    <tr>
+                      <th>sep:</th>
+                      <td>Sep</td>
+                    </tr>
+                    <tr>
+                      <th>oct:</th>
+                      <td>Oct</td>
+                    </tr>
+                    <tr>
+                      <th>nov:</th>
+                      <td>Nov</td>
+                    </tr>
+                    <tr>
+                      <th>dec:</th>
+                      <td>Dec</td>
+                    </tr>
+                  </tbody></table>
+                </td>
+                <td class="lang">
+                  <table>
+                    <tbody><tr>
+                      <th>sunday:</th>
+                      <td>Sunday</td>
+                    </tr>
+                    <tr>
+                      <th>monday:</th>
+                      <td>Monday</td>
+                    </tr>
+                    <tr>
+                      <th>tuesday:</th>
+                      <td>Tuesday</td>
+                    </tr>
+                    <tr>
+                      <th>wednesday:</th>
+                      <td>Wednesday</td>
+                    </tr>
+                    <tr>
+                      <th>thursday:</th>
+                      <td>Thursday</td>
+                    </tr>
+                    <tr>
+                      <th>friday:</th>
+                      <td>Friday</td>
+                    </tr>
+                    <tr>
+                      <th>saturday:</th>
+                      <td>Saturday</td>
+                    </tr>
+                    <tr>
+                      <th>sun:</th>
+                      <td>Sun</td>
+                    </tr>
+                    <tr>
+                      <th>mon:</th>
+                      <td>Mon</td>
+                    </tr>
+                    <tr>
+                      <th>tue:</th>
+                      <td>Tue</td>
+                    </tr>
+                    <tr>
+                      <th>wed:</th>
+                      <td>Wed</td>
+                    </tr>
+                    <tr>
+                      <th>thu:</th>
+                      <td>Thu</td>
+                    </tr>
+                    <tr>
+                      <th>fri:</th>
+                      <td>Fri</td>
+                    </tr>
+                    <tr>
+                      <th>sat:</th>
+                      <td>Sat</td>
+                    </tr>
+                    <tr>
+                      <th>resource:</th>
+                      <td>Resource</td>
+                    </tr>
+                    <tr>
+                      <th>duration:</th>
+                      <td>Duration</td>
+                    </tr>
+                    <tr>
+                      <th>comp:</th>
+                      <td>% Comp.</td>
+                    </tr>
+                    <tr>
+                      <th>completion:</th>
+                      <td>Completion</td>
+                    </tr>
+                    <tr>
+                      <th>startdate:</th>
+                      <td>Start Date</td>
+                    </tr>
+                    <tr>
+                      <th>enddate:</th>
+                      <td>End Date</td>
+                    </tr>
+                    <tr>
+                      <th>moreinfo:</th>
+                      <td>More Information</td>
+                    </tr>
+                    <tr>
+                      <th>notes:</th>
+                      <td>Notes</td>
+                    </tr>
+                  </tbody></table>
+                </td>
+                <td class="lang">
+                  <table>
+                    <tbody><tr>
+                      <th>format:</th>
+                      <td>Format</td>
+                    </tr>
+                    <tr>
+                      <th>hour:</th>
+                      <td>Hour</td>
+                    </tr>
+                    <tr>
+                      <th>day:</th>
+                      <td>Day</td>
+                    </tr>
+                    <tr>
+                      <th>week:</th>
+                      <td>Week</td>
+                    </tr>
+                    <tr>
+                      <th>month:</th>
+                      <td>Month</td>
+                    </tr>
+                    <tr>
+                      <th>quarter:</th>
+                      <td>Quarter</td>
+                    </tr>
+                    <tr>
+                      <th>hours:</th>
+                      <td>Hours</td>
+                    </tr>
+                    <tr>
+                      <th>days:</th>
+                      <td>Days</td>
+                    </tr>
+                    <tr>
+                      <th>weeks:</th>
+                      <td>Weeks</td>
+                    </tr>
+                    <tr>
+                      <th>months:</th>
+                      <td>Months</td>
+                    </tr>
+                    <tr>
+                      <th>quarters:</th>
+                      <td>Quarters</td>
+                    </tr>
+                    <tr>
+                      <th>hr:</th>
+                      <td>Hr</td>
+                    </tr>
+                    <tr>
+                      <th>dy:</th>
+                      <td>Day</td>
+                    </tr>
+                    <tr>
+                      <th>wk:</th>
+                      <td>Wk</td>
+                    </tr>
+                    <tr>
+                      <th>mth:</th>
+                      <td>Mth</td>
+                    </tr>
+                    <tr>
+                      <th>qtr:</th>
+                      <td>Qtr</td>
+                    </tr>
+                    <tr>
+                      <th>hrs:</th>
+                      <td>Hrs</td>
+                    </tr>
+                    <tr>
+                      <th>dys:</th>
+                      <td>Days</td>
+                    </tr>
+                    <tr>
+                      <th>wks:</th>
+                      <td>Wks</td>
+                    </tr>
+                    <tr>
+                      <th>mths:</th>
+                      <td>Mths</td>
+                    </tr>
+                    <tr>
+                      <th>qtrs:</th>
+                      <td>Qtrs</td>
+                    </tr>
+                  </tbody></table>
+                </td>
+            </tr></tbody>
+          </table>
+        </blockquote>
+        <p>When adding a language any translations that are not provided
+ will use the default English language value.  This provides a simple 
+way to override default strings e.g.</p>
+        <pre class="prettyprint lang-js prettyprinted" style=""><code><span class="pln">g</span><span class="pun">.</span><span class="pln">addLang</span><span class="pun">(</span><span class="str">'en2'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="str">'format'</span><span class="pun">:</span><span class="str">'Select'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'comp'</span><span class="pun">:</span><span class="str">'Complete'</span><span class="pun">});</span></code></pre>
+        <p>would create a language called 'en2' where the text in the 
+format selector was "Select" rather than "Format" and the header for the
+ Percentage Complete column in the task list is "Complete" rather than 
+"% Comp."</p>
+        <p>Once a translation has been added a call must be made to <a href="#setLang">setLang()</a> with the appropriate langage identifier before calling Draw().</p>
+        <h3 id="tOptionsExamples">Example Options</h3>
+        <p>The configuration options used in the example chart above are:</p>
+        <pre class="prettyprint lang-js prettyprinted" style=""><code><span class="pln">g</span><span class="pun">.</span><span class="pln">setCaptionType</span><span class="pun">(</span><span class="str">'Complete'</span><span class="pun">);</span><span class="pln">  </span><span class="com">// Set to Show Caption (None,Caption,Resource,Duration,Complete)</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setQuarterColWidth</span><span class="pun">(</span><span class="lit">36</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setDateTaskDisplayFormat</span><span class="pun">(</span><span class="str">'day dd month yyyy'</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Shown in tool tip box</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setDayMajorDateDisplayFormat</span><span class="pun">(</span><span class="str">'mon yyyy - Week ww'</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Set format to display dates in the "Major" header of the "Day" view</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setWeekMinorDateDisplayFormat</span><span class="pun">(</span><span class="str">'dd mon'</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Set format to display dates in the "Minor" header of the "Week" view</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setShowTaskInfoLink</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span><span class="pln"> </span><span class="com">//Show link in tool tip (0/1)</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setShowEndWeekDate</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Show/Hide the date for the last day of the week in header for daily view (1/0)</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setUseSingleCell</span><span class="pun">(</span><span class="lit">10000</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Set the threshold at which we will only use one cell per table row (0 disables).  Helps with rendering performance for large charts.</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setFormatArr</span><span class="pun">(</span><span class="str">'Day'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Week'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Month'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Quarter'</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Even with setUseSingleCell using Hour format on such a large chart can cause issues in some browsers</span><span class="pln">
+        </span></code></pre>
+        <p>Putting all this information together the final code to produce the chart above is as follows:</p>
+        <pre class="prettyprint lang-html prettyprinted" style=""><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"jsgantt.css"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">language</span><span class="pun">=</span><span class="atv">"javascript"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"jsgantt.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="kwd">position</span><span class="pun">:</span><span class="pln">relative</span><span class="atv">"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"gantt"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"GanttChartDIV"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;script&gt;</span><span class="pln">
+
+</span><span class="kwd">var</span><span class="pln"> g </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">GanttChart</span><span class="pun">(</span><span class="str">'g'</span><span class="pun">,</span><span class="pln">document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">'GanttChartDIV'</span><span class="pun">),</span><span class="pln"> </span><span class="str">'day'</span><span class="pun">);</span><span class="pln">
+
+</span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> g</span><span class="pun">.</span><span class="pln">getDivId</span><span class="pun">()</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setCaptionType</span><span class="pun">(</span><span class="str">'Complete'</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setQuarterColWidth</span><span class="pun">(</span><span class="lit">36</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setDateTaskDisplayFormat</span><span class="pun">(</span><span class="str">'day dd month yyyy'</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setDayMajorDateDisplayFormat</span><span class="pun">(</span><span class="str">'mon yyyy - Week ww'</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setWeekMinorDateDisplayFormat</span><span class="pun">(</span><span class="str">'dd mon'</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setShowTaskInfoLink</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setShowEndWeekDate</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setUseSingleCell</span><span class="pun">(</span><span class="lit">10000</span><span class="pun">);</span><span class="pln">
+g</span><span class="pun">.</span><span class="pln">setFormatArr</span><span class="pun">(</span><span class="str">'Day'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Week'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Month'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Quarter'</span><span class="pun">);</span><span class="pln">
+
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln">   </span><span class="str">'Define Chart API'</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">           </span><span class="str">''</span><span class="pun">,</span><span class="pln">          </span><span class="str">'ggroupblack'</span><span class="pun">,</span><span class="pln">  </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">0</span><span class="pun">,</span><span class="pln">   </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">'Some Notes text'</span><span class="pun">,</span><span class="pln"> g </span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">11</span><span class="pun">,</span><span class="pln">  </span><span class="str">'Chart Object'</span><span class="pun">,</span><span class="pln">         </span><span class="str">'2016-02-20'</span><span class="pun">,</span><span class="str">'2016-02-20'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gmilestone'</span><span class="pun">,</span><span class="pln">   </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Shlomy'</span><span class="pun">,</span><span class="pln">   </span><span class="lit">100</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">12</span><span class="pun">,</span><span class="pln">  </span><span class="str">'Task Objects'</span><span class="pun">,</span><span class="pln">         </span><span class="str">''</span><span class="pun">,</span><span class="pln">           </span><span class="str">''</span><span class="pun">,</span><span class="pln">          </span><span class="str">'ggroupblack'</span><span class="pun">,</span><span class="pln">  </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Shlomy'</span><span class="pun">,</span><span class="pln">   </span><span class="lit">40</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">121</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Constructor Proc'</span><span class="pun">,</span><span class="pln">     </span><span class="str">'2016-02-21'</span><span class="pun">,</span><span class="str">'2016-03-09'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskblue'</span><span class="pun">,</span><span class="pln">    </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian T.'</span><span class="pun">,</span><span class="pln"> </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">12</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">122</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Task Variables'</span><span class="pun">,</span><span class="pln">       </span><span class="str">'2016-03-06'</span><span class="pun">,</span><span class="str">'2016-03-11'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskred'</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">12</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">121</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">123</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Task by Minute/Hour'</span><span class="pun">,</span><span class="pln">  </span><span class="str">'2016-03-09'</span><span class="pun">,</span><span class="str">'2016-03-14 12:00'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskyellow'</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Ilan'</span><span class="pun">,</span><span class="pln">     </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">12</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">124</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Task Functions'</span><span class="pun">,</span><span class="pln">       </span><span class="str">'2016-03-09'</span><span class="pun">,</span><span class="str">'2016-03-29'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskred'</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Anyone'</span><span class="pun">,</span><span class="pln">   </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">12</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">'123SS'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'This is a caption'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln"> g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="pln">   </span><span class="str">'Create HTML Shell'</span><span class="pun">,</span><span class="pln">    </span><span class="str">'2016-03-24'</span><span class="pun">,</span><span class="str">'2016-03-24'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskyellow'</span><span class="pun">,</span><span class="pln">  </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">20</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">122</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">3</span><span class="pun">,</span><span class="pln">   </span><span class="str">'Code Javascript'</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">           </span><span class="str">''</span><span class="pun">,</span><span class="pln">          </span><span class="str">'ggroupblack'</span><span class="pun">,</span><span class="pln">  </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">0</span><span class="pun">,</span><span class="pln">   </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">31</span><span class="pun">,</span><span class="pln">  </span><span class="str">'Define Variables'</span><span class="pun">,</span><span class="pln">     </span><span class="str">'2016-02-25'</span><span class="pun">,</span><span class="str">'2016-03-17'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskpurple'</span><span class="pun">,</span><span class="pln">  </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">30</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">'Caption 1'</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="pln">   g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">32</span><span class="pun">,</span><span class="pln">  </span><span class="str">'Calculate Chart Size'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'2016-03-15'</span><span class="pun">,</span><span class="str">'2016-03-24'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskgreen'</span><span class="pun">,</span><span class="pln">   </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Shlomy'</span><span class="pun">,</span><span class="pln">   </span><span class="lit">40</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">33</span><span class="pun">,</span><span class="pln">  </span><span class="str">'Draw Task Items'</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">           </span><span class="str">''</span><span class="pun">,</span><span class="pln">          </span><span class="str">'ggroupblack'</span><span class="pun">,</span><span class="pln">  </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Someone'</span><span class="pun">,</span><span class="pln">  </span><span class="lit">40</span><span class="pun">,</span><span class="pln">  </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">332</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Task Label Table'</span><span class="pun">,</span><span class="pln">     </span><span class="str">'2016-03-06'</span><span class="pun">,</span><span class="str">'2016-03-09'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskblue'</span><span class="pun">,</span><span class="pln">    </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">33</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">333</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Task Scrolling Grid'</span><span class="pun">,</span><span class="pln">  </span><span class="str">'2016-03-11'</span><span class="pun">,</span><span class="str">'2016-03-20'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskblue'</span><span class="pun">,</span><span class="pln">    </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">0</span><span class="pun">,</span><span class="pln">   </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">33</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">'332'</span><span class="pun">,</span><span class="pln">   </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">34</span><span class="pun">,</span><span class="pln">  </span><span class="str">'Draw Task Bars'</span><span class="pun">,</span><span class="pln">       </span><span class="str">''</span><span class="pun">,</span><span class="pln">           </span><span class="str">''</span><span class="pun">,</span><span class="pln">          </span><span class="str">'ggroupblack'</span><span class="pun">,</span><span class="pln">  </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Anybody'</span><span class="pun">,</span><span class="pln">  </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">341</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Loop each Task'</span><span class="pun">,</span><span class="pln">       </span><span class="str">'2016-03-26'</span><span class="pun">,</span><span class="str">'2016-04-11'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskred'</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">34</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">342</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Calculate Start/Stop'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'2016-04-12'</span><span class="pun">,</span><span class="str">'2016-05-18'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskpink'</span><span class="pun">,</span><span class="pln">    </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">34</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">343</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Draw Task Div'</span><span class="pun">,</span><span class="pln">        </span><span class="str">'2016-05-13'</span><span class="pun">,</span><span class="str">'2016-05-17'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskred'</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">34</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">344</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Draw Completion Div'</span><span class="pun">,</span><span class="pln">  </span><span class="str">'2016-05-17'</span><span class="pun">,</span><span class="str">'2016-06-04'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskred'</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">60</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">34</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"342,343"</span><span class="pun">,</span><span class="str">''</span><span class="pun">,</span><span class="pln">     </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+g</span><span class="pun">.</span><span class="typ">AddTaskItem</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JSGantt</span><span class="pun">.</span><span class="typ">TaskItem</span><span class="pun">(</span><span class="lit">35</span><span class="pun">,</span><span class="pln">  </span><span class="str">'Make Updates'</span><span class="pun">,</span><span class="pln">         </span><span class="str">'2016-07-17'</span><span class="pun">,</span><span class="str">'2017-09-04'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gtaskpurple'</span><span class="pun">,</span><span class="pln">  </span><span class="str">''</span><span class="pun">,</span><span class="pln">       </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Brian'</span><span class="pun">,</span><span class="pln">    </span><span class="lit">30</span><span class="pun">,</span><span class="pln">  </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">  </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">'333'</span><span class="pun">,</span><span class="pln">   </span><span class="str">''</span><span class="pun">,</span><span class="pln">      </span><span class="str">''</span><span class="pun">,</span><span class="pln">      g</span><span class="pun">));</span><span class="pln">
+
+g</span><span class="pun">.</span><span class="typ">Draw</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">else</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+alert</span><span class="pun">(</span><span class="str">"Error, unable to create Gantt Chart"</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="tag">&lt;/script&gt;</span></code></pre>
+        <h2 id="xmlExport">XML Export</h2>
+        <p>The following methods can be used to extract details of tasks in the project in XML format</p>
+        <p>Method definition: <strong>getXMLProject()</strong></p>
+        <p>Returns a string containing the entire project in JSGantt 
+Improved XML format. Dates will be exported in the currently defined 
+input format as set by setDateInputFormat()</p>
+        <p>Method definition: <strong>getXMLTask(<em>pID, pIdx</em>)</strong></p>
+        <table>
+          <tbody><tr>
+            <th>pID:</th>
+            <td>(required) the numeric ID that identifies the task to extract</td>
+          </tr>
+          <tr>
+            <th>pIdx:</th>
+            <td>(optional) Boolean - if present and set to "true" the 
+number passed in the pID parameter is treated as an array index for the 
+task list rather than an ID</td>
+          </tr>
+        </tbody></table>
+        <p>Returns a string containing the specified task item in 
+JSGantt Improved XML format. Dates will be exported in the currently 
+defined input format as set by setDateInputFormat()</p>
+      </div>
+    <!-- Credits -->
+      <div class="container-fluid section" id="credits">
+        <h1>Credits</h1>
+        <div class="card-group">
+          <div class="card contact-card">
+            <img class="img-fluid" src="jsGantt%20Improved%20Archivos/eduardomourar.png" alt="Eduardo Rodrigues">
+            <div class="card-block">
+              <h4 class="card-title">Eduardo Rodrigues</h4>
+              <p class="card-text">Developer</p>
+              <div class="text-right">
+                <a href="https://github.com/eduardomourar" class="card-link contact-link"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card contact-card">
+            <img class="img-fluid" src="jsGantt%20Improved%20Archivos/RickCardoso.jfif" alt="Ricardo Cardoso">
+            <div class="card-block">
+              <h4 class="card-title">Ricardo Cardoso</h4>
+              <p class="card-text">Developer</p>
+              <div class="text-right">
+                <a href="https://github.com/RickCardoso" class="card-link contact-link"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer -->
+      <div class="footer text-center">
+        <p>© Copyright 2013-2017 jsGanttImproved<br>
+        Designed with <a href="https://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="http://fontawesome.io/" target="_blank">Font Awesome</a></p>
+      </div>
+
+  
+
+
+<div id="embedded-GanttJSGanttToolTip" class="JSGanttToolTip" style="opacity: 0.7; visibility: visible; left: 650px; top: 1101px; width: auto;" currentopacity="70" fadeincrement="10" movespeed="10"><div id="embedded-GanttJSGanttToolTipcont" class="JSGanttToolTipcont" showing="embedded-Gantttt34"><div class="gTaskInfo"><span class="gTtTitle">Draw Task Bars</span><div class="gTILine gTIsd"><span class="gTaskLabel">Start Date: </span><span class="gTaskText">Sun 26 March 2017</span></div><div class="gTILine gTIed"><span class="gTaskLabel">End Date: </span><span class="gTaskText">Sun 04 June 2017</span></div><div class="gTILine gTId"><span class="gTaskLabel">Duration: </span><span class="gTaskText">71 Days</span></div><div class="gTILine gTIc"><span class="gTaskLabel">Completion: </span><span class="gTaskText">60%</span></div><div class="gTILine gTIr"><span class="gTaskLabel">Resource: </span><span class="gTaskText">Anybody</span></div><div class="gTILine gTIn"><span class="gTaskLabel">Notes: </span><span class="gTaskNotes"></span></div></div></div></div></body></html>
