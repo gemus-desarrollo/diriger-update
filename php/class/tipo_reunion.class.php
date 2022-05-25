@@ -65,7 +65,15 @@ class Ttipo_reunion extends Tbase_tipo {
         $result = $this->do_sql_show_error("get_from_other_entity", $sql);
         $row= $this->clink->fetch_array($result);
         return !empty($row['id']) ? array($row['id'], $row['id_code']) : null;
-    }    
+    }
+
+    public function get_id_tipo_reunion_otra() {
+        $sql= "select * from ttipo_reuniones where id_proceso = $this->id_proceso and lower(nombre) like 'otras' ";
+
+        $result = $this->do_sql_show_error("get_id_tipo_reunion_otra", $sql);
+        $row= $this->clink->fetch_array($result);
+        return !empty($row['id']) ? $row['id'] : 1;
+    }
 }
 
 /*

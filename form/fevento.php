@@ -133,7 +133,6 @@ else
     $_tipo_reunion= !is_null($_GET['_tipo_reunion']) ? $_GET['_tipo_reunion'] : $obj->GetIdTipo_reunion();
 
 $id_tipo_reunion= !empty($_GET['id_tipo_reunion']) ? $_GET['id_tipo_reunion'] : $obj->GetIdTipo_reunion();
-
 $id_secretary= !empty($_GET['id_secretary']) ? $_GET['id_secretary'] : $obj->GetIdSecretary();
 $ifassure= !empty($_GET['ifassure']) ? urldecode($_GET['ifassure']) : $obj->GetIfAssure();
 
@@ -230,6 +229,13 @@ if ($action == 'add') {
         $obj_prs->Set($id_proceso);
         $id_proceso_code= $obj_prs->get_id_code();
     }
+}
+
+$id_tipo_reunion_otra= !empty($_GET['id_tipo_reunion_otra']) ? $_GET['id_tipo_reunion_otra'] : null;
+if (empty($id_tipo_reunion_otra)) {
+    $obj_meeting= new Ttipo_reunion($clink);
+    $obj_meeting->SetIdProceso($id_proceso);
+    $id_tipo_reunion_otra= $obj_meeting->get_id_tipo_reunion_otra();
 }
 
 $if_jefe= false;
@@ -803,7 +809,7 @@ if (!empty($id_riesgo) && $_SESSION['acc_planwork'] == 3)
     }
 
     function refresh_tipo_reunion() {
-        if ($('#tipo_reunion').val() == 0 || $('#tipo_reunion').val() == <?= _MEETING_TIPO_OTRA ?>) {
+        if ($('#tipo_reunion').val() == 0 || $('#tipo_reunion').val() == <?=$id_tipo_reunion_otra?>) {
             $('#nombre').prop('readOnly', false);
         } else {
             $('#nombre').prop('readOnly', true);
@@ -1116,6 +1122,8 @@ if (!empty($id_riesgo) && $_SESSION['acc_planwork'] == 3)
 
                         <input type="hidden" id="tipo_actividad_flag" value="" />
                         <input type="hidden" id="ifgrupo0" name="ifgrupo" value="0" />
+
+                        <input type="hidden" id="id_tipo_reunion_otra" name="id_tipo_reunion_otra" value="<?=$id_tipo_reunion_otra?>" />
 
                         <!-- generales -->
                         <div class="tabcontent" id="tab1">
