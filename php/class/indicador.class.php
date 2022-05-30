@@ -214,7 +214,8 @@ class Tindicador extends Tunidad {
         $id= !empty($id) ? $id : $this->id_indicador;
         $flag= !is_null($flag) ? $flag : true;
 
-        if (isset($this->array_indicadores)) unset($this->array_indicadores);
+        if (isset($this->array_indicadores)) 
+            unset($this->array_indicadores);
         $this->array_indicadores= array();
 
         $sql= "select distinct tindicadores.* from tindicadores, tformulas where id_indicador_ref = $id ";
@@ -231,7 +232,8 @@ class Tindicador extends Tunidad {
     public function get_array_indicadores_ref($id= null) {
         $id= !empty($id) ? $id : $this->id_indicador;
 
-        if (isset($this->array_indicadores)) unset($this->array_indicadores);
+        if (isset($this->array_indicadores)) 
+            unset($this->array_indicadores);
         $this->array_indicadores= array();
 
         $sql= "select id_indicador_ref, id_indicador_ref_code, cumulative, formulated from tformulas, tindicadores ";

@@ -6,7 +6,7 @@
  * Time: 18:16
  */
 
-define('_UPDATE_DIRIGER', "Mayo 25, 2022, 12:38 PM");
+define('_UPDATE_DIRIGER', "Mayo 29, 2022, 04:50 PM");
 define('_VERSION_DIRIGER', "10.0");
 
 define('_UPDATE_DIRIGER_NO', "26.0");

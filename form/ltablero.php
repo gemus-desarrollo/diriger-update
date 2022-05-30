@@ -148,8 +148,9 @@ set_page($url_page);
                 </thead>
                 <tbody>
                     <?php
-                        $i = 0;
-                        while ($row = $clink->fetch_array($result)) { ?>
+                    $i = 0;
+                    while ($row = $clink->fetch_array($result)) { 
+                    ?>
                     <tr>
                         <td>
                             <?=++$i?>

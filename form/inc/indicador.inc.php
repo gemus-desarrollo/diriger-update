@@ -89,7 +89,8 @@ $obj_ind= null;
                 else 
                     $_connect= 1;
 
-                if (isset($obj_indi)) unset($obj_indi);
+                if (isset($obj_indi)) 
+                    unset($obj_indi);
                 $obj_indi= new Tindicador($clink);
                 $obj_indi->SetIdProceso($row_prs['id']);
                 $obj_indi->SetYear($year);
@@ -110,12 +111,12 @@ $obj_ind= null;
             while ($row= $clink->fetch_array($result_indi)) {
                 if ($row['_id_proceso'] != $row_prs['id'])                    
                     continue;
-    
-                if ($row['id_proceso'] != $_SESSION['id_entity']) {
+                /*
+                if ($row['_id_proceso'] != $_SESSION['id_entity']) {
                     if (!$obj_indi->test_if_in_proceso($_SESSION['id_entity'], $row['_id']))
                         continue;
                 }
-    
+                */
                 if ($array_ids[$row['_id']])
                     continue;
                 $array_ids[$row['_id']]= 1;
