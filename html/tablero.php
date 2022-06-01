@@ -268,11 +268,7 @@ set_page($url_page);
 
         <!-- app-body -->
         <div class="app-body container-fluid threebar">
-            <br />
-            <div>
-
-            </div>
-            
+            <br />            
             <?php
             $cant_indi= 0;
             $obj_prs= new Tproceso($clink);

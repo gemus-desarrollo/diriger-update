@@ -16,7 +16,6 @@ $flag_restrict_by_form= array_search($name_form, $array_permit_by_form) !== fals
         </div>
     </div>
 
-
     <script type="text/javascript">
        $(document).ready(function() {
         <?php
@@ -124,10 +123,14 @@ $flag_restrict_by_form= array_search($name_form, $array_permit_by_form) !== fals
                         continue;  
                 }
 
-                if ($create_select_input && $row['tipo'] == _TIPO_PROCESO_INTERNO) {
-                    $value= !is_null($array_procesos[$row['id']]['peso']) ? $array_procesos[$row['id']]['peso'] : 'undefined';
+                if ($create_select_input) {
+                    if ($row['tipo'] == _TIPO_PROCESO_INTERNO) 
+                        $value= !is_null($array_procesos[$row['id']]['peso']) ? $array_procesos[$row['id']]['peso'] : 'undefined';
+                    else 
+                        $value =!is_null($array_procesos[$row['id']]) ? 1 : 'undefined';
                 }
-                if (!$create_select_input || $row['tipo'] != _TIPO_PROCESO_INTERNO)
+
+                if (!$create_select_input)
                     $value = $array_procesos[$row['id']] ? 1 : 0;
   
                 ++$j;

@@ -29,7 +29,7 @@ while ($row= $clink->fetch_array($result_indi)) {
     if ($id_entity != $_SESSION['id_entity']) {
         if (!array_key_exists($row['_id'], $array_indicadores))
             continue;
-    }    
+    }  
 
     ++$i;
     $peso= $row['_peso'];

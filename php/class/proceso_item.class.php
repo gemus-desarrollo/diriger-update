@@ -145,9 +145,9 @@ if (!class_exists('Tproceso_item') && class_exists('Tproceso')) {
             $sql.= "tindicadores.fin as _fin, tproceso_indicadores.peso as _peso, tproceso_indicadores.critico as _critico, ";
             $sql.= "tproceso_indicadores.year as _year, tindicadores.id_proceso as _id_proceso, ";
             $sql.= "tindicadores.id as _id, tindicadores.nombre as _nombre from tproceso_indicadores, tindicadores ";
-            $sql.= "where tindicadores.id = tproceso_indicadores.id_indicador ";
+            $sql.= "where 1 ";
             if (!empty($this->id_proceso))
-                $sql.= "and tproceso_indicadores.id_proceso = $this->id_proceso ";
+                $sql.= "and (tproceso_indicadores.id_proceso = $this->id_proceso or tindicadores.id_proceso = $this->id_proceso) ";
             if (!empty($this->year))
                 $sql.= "and ((inicio <= $this->year and fin >= $this->year) and tproceso_indicadores.year = $this->year) ";
 
@@ -158,7 +158,8 @@ if (!class_exists('Tproceso_item') && class_exists('Tproceso')) {
             if (empty($this->cant))
                 return null;
 
-            if (isset($this->array_indicadores)) unset($this->array_indicadores);
+            if (isset($this->array_indicadores)) 
+                unset($this->array_indicadores);
 
             $i= 0;
             while ($row= $this->clink->fetch_array($result)) {

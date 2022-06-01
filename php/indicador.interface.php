@@ -141,6 +141,45 @@ class TindicadorInterface extends TbaseInterface {
         $tobj->SetIdIndicador($this->id_indicador);
         $tobj->set_id_indicador_code($this->id_indicador_code);
 
+        $use_undefined= !empty($_POST['multiselect-prs_use_undefined']) ? 1 : 0;
+
+        /* insertando el resto de los procesos a los que pertenece el indicador */
+        while ($row= $this->clink->fetch_array($result)) {
+            $value= setNULL_undefined($_POST['multiselect-prs_'.$row['_id']]);
+            $_value = setNULL_undefined($_POST['multiselect-prs_init_' . $row['_id']]);
+            $peso= $_POST['multiselect-prs-select_'.$row['_id']];
+
+            if ((!is_null($value) && $value == $_value) 
+                || (empty($value) && (($use_undefined && is_null($_value)) || (!$use_undefined && empty($_value)))))
+                continue;
+
+            $tobj->SetIdProceso($row['_id']);
+            $tobj->set_id_proceso_code($row['_id_code']);
+
+            for ($year= $this->inicio; $year <= $this->fin; $year++) {
+                $tobj->SetYear($year);
+
+                if (!empty($value) && $_value != $value) {
+                    $error= $tobj->setIndicador('add', $peso);
+                    $cant= $tobj->GetCantidad();
+
+                    if ($cant == 0)
+                        $error= $tobj->setIndicador('update', $peso);
+                } 
+                
+                if (!is_null($_value) && is_null($value)) {
+                    $tobj->SetIndicador('delete');
+                    $this->obj_code->reg_delete('tproceso_indicadores', 'id_indicador_code', $this->id_code, 'id_proceso_code', $row['_id_code']);
+                }
+                
+                if (!is_null($error))
+                    break;                
+            }
+
+            if (!is_null($error))
+                break;    
+        }
+
         /* insertando primero el proceso que gestiona el indicador */
         for ($year= $this->inicio; $year <= $this->fin; $year++) {
             $tobj->SetYear($year);
@@ -152,39 +191,7 @@ class TindicadorInterface extends TbaseInterface {
                 $tobj->setIndicador();
             }
         }
-        
-        /* insertando el resto de los procesos a los que pertenece el indicador */
-        $use_undefined= $_POST['multiselect-prs_use_undefined'];
 
-        while ($row= $this->clink->fetch_array($result)) {
-            $value= $_POST['multiselect-prs_'.$row['_id']];
-            $_value = $_POST['multiselect-prs_init_ind' . $row['_id']];
-            $peso= $_POST['multiselect-prs-select_'.$row['_id']];
-
-            if ($value == $_value)
-                continue;
-            $tobj->SetIdProceso($row['_id']);
-            $tobj->set_id_proceso_code($row['_id_code']);
-
-            for ($year= $this->inicio; $year <= $this->fin; $year++) {
-                $tobj->SetYear($year);
-
-                if (!empty($value) && $_value != $value) {
-                    $error= $tobj->setIndicador('add', $peso);
-                    $cant= $tobj->GetCantidad();
-                    if ($cant == 0)
-                        $error= $tobj->setIndicador('update', $peso);
-
-                } else {
-                    if (!is_null($_value) && is_null(setNULL_undefined($value))) {
-                        $tobj->SetIndicador('delete');
-                        $this->obj_code->reg_delete('tproceso_indicadores', 'id_indicador_code', $this->id_code, 'id_proceso_code', $row['_id_code']);
-            }   }   }
-
-            if (!is_null($error))
-                break;
-        }
-            
         unset($tobj);
         return $error;
     }
@@ -229,12 +236,17 @@ class TindicadorInterface extends TbaseInterface {
             $_calculo= $this->obj->GetFormCalculo();
         }
 
-        $this->id_proceso= $_SESSION['id_entity'];
-        $this->id_proceso_code= $_SESSION['id_entity_code'];
-
         if ($this->action == 'add') {
+            $this->id_proceso= $_SESSION['id_entity'];
+            $this->id_proceso_code= $_SESSION['id_entity_code'];
+
             $this->id_proceso_ref= $_SESSION['id_entity'];
             $this->id_proceso_code_ref= $_SESSION['id_entity_code'];
+        }
+
+        if ($this->action == 'update') {
+            $this->id_proceso= $this->id_proceso_ref;
+            $this->id_proceso_code= $this->id_proceso_code;
         }
         
         $this->obj->SetIdProceso($this->id_proceso_ref);
